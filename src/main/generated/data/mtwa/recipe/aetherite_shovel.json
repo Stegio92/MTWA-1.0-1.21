@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mtwa:aetherite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_shovel"
+  },
+  "result": {
+    "count": 1,
+    "id": "mtwa:aetherite_shovel"
+  },
+  "template": {
+    "item": "mtwa:aetherite_upgrade_smithing_template"
+  }
+}

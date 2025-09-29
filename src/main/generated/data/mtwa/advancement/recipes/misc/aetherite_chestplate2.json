@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aetherite_chestplate1": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_chestplate1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mtwa:aetherite_chestplate2"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_aetherite_chestplate1"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mtwa:aetherite_chestplate2"
+    ]
+  }
+}

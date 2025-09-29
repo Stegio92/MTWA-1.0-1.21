@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mtwa:aetherite_ingot"
+    },
+    "N": {
+      "item": "minecraft:netherite_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    "ANA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:aetherite_upgrade_smithing_template"
+  }
+}

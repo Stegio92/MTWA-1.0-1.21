@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 500,
+  "experience": 1.5,
+  "group": "titanite_scrap",
+  "ingredient": {
+    "item": "mtwa:ancient_titanite_debris1"
+  },
+  "result": {
+    "id": "mtwa:titanite_scrap"
+  }
+}

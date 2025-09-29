@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mtwa:aetherite_ingot"
+  },
+  "base": {
+    "item": "mtwa:netherite_horse_armor"
+  },
+  "result": {
+    "count": 1,
+    "id": "mtwa:aetherite_horse_armor"
+  },
+  "template": {
+    "item": "mtwa:aetherite_upgrade_smithing_template"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mtwa:aetherite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_pickaxe"
+  },
+  "result": {
+    "count": 1,
+    "id": "mtwa:aetherite_pickaxe"
+  },
+  "template": {
+    "item": "mtwa:aetherite_upgrade_smithing_template"
+  }
+}

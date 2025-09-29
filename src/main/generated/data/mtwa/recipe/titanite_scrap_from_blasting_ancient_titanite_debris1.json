@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 0.75,
+  "group": "titanite_scrap",
+  "ingredient": {
+    "item": "mtwa:ancient_titanite_debris1"
+  },
+  "result": {
+    "id": "mtwa:titanite_scrap"
+  }
+}

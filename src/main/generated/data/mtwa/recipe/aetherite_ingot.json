@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "mtwa:aetherite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "mtwa:aetherite_ingot"
+  }
+}

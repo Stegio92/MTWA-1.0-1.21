@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "aetherite_scrap",
+  "ingredient": {
+    "item": "mtwa:ancient_aetherite_debris1"
+  },
+  "result": {
+    "id": "mtwa:aetherite_scrap"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "*": {
+      "item": "mtwa:aetherite_core1"
+    },
+    "B": {
+      "item": "minecraft:breeze_rod"
+    }
+  },
+  "pattern": [
+    "*",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:aetherite_mace"
+  }
+}

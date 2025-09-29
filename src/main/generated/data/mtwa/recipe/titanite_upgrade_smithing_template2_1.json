@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "*": {
+      "item": "mtwa:titanite_upgrade_smithing_template"
+    },
+    "T": {
+      "item": "mtwa:titanite_ingot"
+    }
+  },
+  "pattern": [
+    "T*T"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:titanite_upgrade_smithing_template2"
+  }
+}

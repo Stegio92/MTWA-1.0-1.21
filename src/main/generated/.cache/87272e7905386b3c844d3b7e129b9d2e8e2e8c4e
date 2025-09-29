@@ -1,0 +1,5 @@
+// 1.21	2025-09-29T16:39:22.1451358	MTWA/Tags for minecraft:block
+06b0710b0578f9eeb32e468306827cc6c883ad0b data\minecraft\tags\block\mineable\pickaxe.json
+aba60a60bb92572b74d84bd81735f5fde54b23f4 data\mtwa\tags\block\needs_aetherite_tool.json
+aba60a60bb92572b74d84bd81735f5fde54b23f4 data\mtwa\tags\block\needs_titanite_tool.json
+87df133ec336b249e0e9de9f625c3e3690cc0e92 data\minecraft\tags\block\needs_diamond_tool.json

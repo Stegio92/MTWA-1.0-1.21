@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aetherite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_aetherite_upgrade_smithing_template4": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_upgrade_smithing_template4"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mtwa:aetherite_upgrade_smithing_template5_1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_aetherite_upgrade_smithing_template4",
+      "has_aetherite_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mtwa:aetherite_upgrade_smithing_template5_1"
+    ]
+  }
+}

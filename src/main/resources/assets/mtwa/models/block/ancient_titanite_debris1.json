@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mtwa:block/ancient_titanite_debris1_top",
+    "side": "mtwa:block/ancient_titanite_debris1_side"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aetherite_axe4": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mtwa:aetherite_axe5"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_aetherite_axe4"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mtwa:aetherite_axe5"
+    ]
+  }
+}

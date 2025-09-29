@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_netherite_katana": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:netherite_katana"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mtwa:aetherite_katana1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_netherite_katana"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mtwa:aetherite_katana1"
+    ]
+  }
+}

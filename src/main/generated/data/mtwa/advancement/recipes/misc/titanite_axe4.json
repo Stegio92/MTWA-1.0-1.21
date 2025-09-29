@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mtwa:titanite_axe4"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_titanite_axe3": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_axe3"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_titanite_axe3"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mtwa:titanite_axe4"
+    ]
+  }
+}

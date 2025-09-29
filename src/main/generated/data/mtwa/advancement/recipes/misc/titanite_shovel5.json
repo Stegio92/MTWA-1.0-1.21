@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mtwa:titanite_shovel5"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_titanite_shovel4": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_shovel4"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_titanite_shovel4"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mtwa:titanite_shovel5"
+    ]
+  }
+}

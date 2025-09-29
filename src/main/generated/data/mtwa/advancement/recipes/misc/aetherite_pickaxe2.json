@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aetherite_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mtwa:aetherite_pickaxe2"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_aetherite_pickaxe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mtwa:aetherite_pickaxe2"
+    ]
+  }
+}

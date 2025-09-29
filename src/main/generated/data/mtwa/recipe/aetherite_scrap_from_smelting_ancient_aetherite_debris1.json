@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 400,
+  "experience": 1.0,
+  "group": "aetherite_scrap",
+  "ingredient": {
+    "item": "mtwa:ancient_aetherite_debris1"
+  },
+  "result": {
+    "id": "mtwa:aetherite_scrap"
+  }
+}

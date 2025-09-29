@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mtwa:aetherite_core1"
+    },
+    "T": {
+      "item": "mtwa:titanite_ingot"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "T#T",
+    "TTT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:titanite_core"
+  }
+}

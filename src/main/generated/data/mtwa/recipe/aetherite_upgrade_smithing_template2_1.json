@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "*": {
+      "item": "mtwa:aetherite_upgrade_smithing_template"
+    },
+    "A": {
+      "item": "mtwa:aetherite_ingot"
+    }
+  },
+  "pattern": [
+    "A*A"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:aetherite_upgrade_smithing_template2"
+  }
+}

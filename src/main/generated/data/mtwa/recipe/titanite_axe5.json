@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mtwa:titanite_ingot"
+  },
+  "base": {
+    "item": "mtwa:titanite_axe4"
+  },
+  "result": {
+    "count": 1,
+    "id": "mtwa:titanite_axe5"
+  },
+  "template": {
+    "item": "mtwa:titanite_upgrade_smithing_template5"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mtwa:aetherite_ingot"
+  },
+  "base": {
+    "item": "mtwa:aetherite_boots3"
+  },
+  "result": {
+    "count": 1,
+    "id": "mtwa:aetherite_boots4"
+  },
+  "template": {
+    "item": "mtwa:aetherite_upgrade_smithing_template4"
+  }
+}

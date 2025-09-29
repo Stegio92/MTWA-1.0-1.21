@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mtwa:titanite_leggings5"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_titanite_leggings4": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_leggings4"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_titanite_leggings4"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mtwa:titanite_leggings5"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mtwa:grave",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 146467565,
+    "spacing": 32,
+    "separation": 16,
+    "type": "minecraft:random_spread"
+  }
+}
