@@ -1,0 +1,29 @@
+{
+  "replacable": false,
+  "values": [
+    {
+      "id": "mtwa:earmorer_poi",
+      "required": false
+    },
+    {
+      "id": "mtwa:eweaponsmith_poi",
+      "required": false
+    },
+    {
+      "id": "mtwa:etoolsmith_poi",
+      "required": false
+    },
+    {
+      "id": "mtwa:marmorer_poi",
+      "required": false
+    },
+    {
+      "id": "mtwa:mweaponsmith_poi",
+      "required": false
+    },
+    {
+      "id": "mtwa:mtoolsmith_poi",
+      "required": false
+    }
+  ]
+}

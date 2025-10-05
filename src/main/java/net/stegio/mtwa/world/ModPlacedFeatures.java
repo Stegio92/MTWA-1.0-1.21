@@ -19,14 +19,23 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> OVERWORLD_ANCIENT_AETHERITE_DEBRIS_PLACED_KEY1 = registerKey("overworld_ancient_aetherite_debris_placed1");
     public static final RegistryKey<PlacedFeature> OVERWORLD_ANCIENT_TITANITE_DEBRIS_PLACED_KEY1 = registerKey("overworld_ancient_titanite_debris_placed1");
+    public static final RegistryKey<PlacedFeature> OVERWORLD_ANCIENT_ETERNITE_DEBRIS_PLACED_KEY1 = registerKey("overworld_ancient_eternite_debris_placed1");
+
     public static final RegistryKey<PlacedFeature> ANCIENT_AETHERITE_DEBRIS_PLACED_KEY1 = registerKey("ancient_aetherite_debris_placed1");
     public static final RegistryKey<PlacedFeature> ANCIENT_TITANITE_DEBRIS_PLACED_KEY1 = registerKey("ancient_titanite_debris_placed1");
+    public static final RegistryKey<PlacedFeature> ANCIENT_ETERNITE_DEBRIS_PLACED_KEY1 = registerKey("ancient_eternite_debris_placed1");
+
     public static final RegistryKey<PlacedFeature> ANCIENT_AETHERITE_DEBRIS_PLACED_KEY2 = registerKey("ancient_aetherite_debris_placed2");
     public static final RegistryKey<PlacedFeature> ANCIENT_TITANITE_DEBRIS_PLACED_KEY2 = registerKey("ancient_titanite_debris_placed2");
+    public static final RegistryKey<PlacedFeature> ANCIENT_ETERNITE_DEBRIS_PLACED_KEY2 = registerKey("ancient_eternite_debris_placed2");
+
     public static final RegistryKey<PlacedFeature> ANCIENT_AETHERITE_DEBRIS_PLACED_KEY3 = registerKey("ancient_aetherite_debris_placed3");
     public static final RegistryKey<PlacedFeature> ANCIENT_TITANITE_DEBRIS_PLACED_KEY3 = registerKey("ancient_titanite_debris_placed3");
+    public static final RegistryKey<PlacedFeature> ANCIENT_ETERNITE_DEBRIS_PLACED_KEY3 = registerKey("ancient_eternite_debris_placed3");
+
     public static final RegistryKey<PlacedFeature> ANCIENT_AETHERITE_DEBRIS_PLACED_KEY4 = registerKey("ancient_aetherite_debris_placed4");
     public static final RegistryKey<PlacedFeature> ANCIENT_TITANITE_DEBRIS_PLACED_KEY4 = registerKey("ancient_titanite_debris_placed4");
+    public static final RegistryKey<PlacedFeature> ANCIENT_ETERNITE_DEBRIS_PLACED_KEY4 = registerKey("ancient_eternite_debris_placed4");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -37,30 +46,59 @@ public class ModPlacedFeatures {
         register(context, OVERWORLD_ANCIENT_TITANITE_DEBRIS_PLACED_KEY1, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ANCIENT_TITANITE_DEBRIS_KEY1),
                 ModOrePlacement.modifiersWithCount(2,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-100), YOffset.fixed(0))));
+        register(context, OVERWORLD_ANCIENT_ETERNITE_DEBRIS_PLACED_KEY1, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ANCIENT_ETERNITE_DEBRIS_KEY1),
+                ModOrePlacement.modifiersWithCount(2,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-120), YOffset.fixed(0))));
+
+
+
         register(context, ANCIENT_AETHERITE_DEBRIS_PLACED_KEY1, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_AETHERITE_DEBRIS_KEY1),
-                ModOrePlacement.modifiersWithCount(4,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(50))));
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(60))));
         register(context, ANCIENT_TITANITE_DEBRIS_PLACED_KEY1, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_TITANITE_DEBRIS_KEY1),
-                ModOrePlacement.modifiersWithCount(4,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(45))));
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(55))));
+        register(context, ANCIENT_ETERNITE_DEBRIS_PLACED_KEY1, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_ETERNITE_DEBRIS_KEY1),
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(50))));
+
+
+
         register(context, ANCIENT_AETHERITE_DEBRIS_PLACED_KEY2, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_AETHERITE_DEBRIS_KEY2),
-                ModOrePlacement.modifiersWithCount(3,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(40))));
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(50))));
         register(context, ANCIENT_TITANITE_DEBRIS_PLACED_KEY2, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_TITANITE_DEBRIS_KEY2),
-                ModOrePlacement.modifiersWithCount(3,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(35))));
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(45))));
+        register(context, ANCIENT_ETERNITE_DEBRIS_PLACED_KEY2, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_ETERNITE_DEBRIS_KEY2),
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(40))));
+
+
+
         register(context, ANCIENT_AETHERITE_DEBRIS_PLACED_KEY3, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_AETHERITE_DEBRIS_KEY3),
-                ModOrePlacement.modifiersWithCount(2,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(30))));
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(40))));
         register(context, ANCIENT_TITANITE_DEBRIS_PLACED_KEY3, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_TITANITE_DEBRIS_KEY3),
-                ModOrePlacement.modifiersWithCount(2,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(25))));
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(35))));
+        register(context, ANCIENT_ETERNITE_DEBRIS_PLACED_KEY3, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_ETERNITE_DEBRIS_KEY3),
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(30))));
+
+
         register(context, ANCIENT_AETHERITE_DEBRIS_PLACED_KEY4, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_AETHERITE_DEBRIS_KEY4),
                 ModOrePlacement.modifiersWithCount(1,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(20))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(30))));
         register(context, ANCIENT_TITANITE_DEBRIS_PLACED_KEY4, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_TITANITE_DEBRIS_KEY4),
                 ModOrePlacement.modifiersWithCount(1,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(15))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(25))));
+        register(context, ANCIENT_ETERNITE_DEBRIS_PLACED_KEY4, configuredFeatures.getOrThrow(ModConfiguredFeatures.ANCIENT_ETERNITE_DEBRIS_KEY4),
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(20))));
+
+
+
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

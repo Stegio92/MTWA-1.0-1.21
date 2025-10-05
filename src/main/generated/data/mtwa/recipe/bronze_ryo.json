@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mtwa:bronze_ryo_bundle"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "mtwa:bronze_ryo"
+  }
+}

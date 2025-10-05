@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mtwa:eternite_ingot"
+  },
+  "base": {
+    "item": "mtwa:titanite_pickaxe5"
+  },
+  "result": {
+    "count": 1,
+    "id": "mtwa:eternite_pickaxe1"
+  },
+  "template": {
+    "item": "mtwa:eternite_upgrade_smithing_template1"
+  }
+}

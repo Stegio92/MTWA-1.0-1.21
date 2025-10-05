@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mtwa:titanite_core"
+    },
+    "E": {
+      "item": "mtwa:eternite_ingot"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "E#E",
+    "EEE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:eternite_core"
+  }
+}

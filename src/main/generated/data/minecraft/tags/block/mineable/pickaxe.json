@@ -4,8 +4,20 @@
     "mtwa:aetherite_core1",
     "mtwa:titanite_block",
     "mtwa:titanite_core",
+    "mtwa:eternite_block",
+    "mtwa:eternite_core",
     "mtwa:ancient_aetherite_debris1",
     "mtwa:ancient_titanite_debris1",
+    "mtwa:ancient_eternite_debris1",
+    "mtwa:aetherite_armor_anvil",
+    "mtwa:titanite_armor_anvil",
+    "mtwa:eternite_armor_anvil",
+    "mtwa:aetherite_weapon_anvil",
+    "mtwa:titanite_weapon_anvil",
+    "mtwa:eternite_weapon_anvil",
+    "mtwa:aetherite_tool_anvil",
+    "mtwa:titanite_tool_anvil",
+    "mtwa:eternite_tool_anvil",
     "mtwa:tombstone"
   ]
 }

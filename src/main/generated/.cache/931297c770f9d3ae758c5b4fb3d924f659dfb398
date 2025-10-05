@@ -1,8 +1,20 @@
-// 1.21	2025-09-29T16:39:22.1393879	MTWA/Block Loot Tables
-6dd37488f73d62903428b8ac92efcc1b36936925 data\mtwa\loot_table\blocks\tombstone.json
+// 1.21	2025-10-05T19:04:07.5117489	MTWA/Block Loot Tables
+62cc08ba5ce87e39784d63ae7258e131caac8032 data\mtwa\loot_table\blocks\titanite_weapon_anvil.json
+43e15f8678335d1a5b74d74bc1cd67351ebfb207 data\mtwa\loot_table\blocks\aetherite_weapon_anvil.json
 9458569cdfad7f35732af642638543f1a53f148c data\mtwa\loot_table\blocks\titanite_core.json
+8715f4c2576f02b9e28618733048413c9b113408 data\mtwa\loot_table\blocks\eternite_armor_anvil.json
+c7c2ce72faf453d0322ec5bd93cf27d68e25aae3 data\mtwa\loot_table\blocks\ancient_eternite_debris1.json
 25ea513431e593792a1d02437d0e157c3782b027 data\mtwa\loot_table\blocks\aetherite_core1.json
 dbf0cd45cd5f40eef485bfb5ad77a925ecc73fc1 data\mtwa\loot_table\blocks\ancient_aetherite_debris1.json
-68ae200fd33eb50c09cdef2c153c17dba5b747d3 data\mtwa\loot_table\blocks\titanite_block.json
+a55149e11d2bdafbb27247816c60f43a09c5eb03 data\mtwa\loot_table\blocks\eternite_block.json
 dc2d06dd02550259f7bcb08e0204beec420db028 data\mtwa\loot_table\blocks\aetherite_block.json
+806d824674091e67c9c67b8c6efc892d45d4d4f3 data\mtwa\loot_table\blocks\eternite_core.json
+cc035888eef7bf13380364abe1d3484602ef7c4b data\mtwa\loot_table\blocks\titanite_tool_anvil.json
+6dd37488f73d62903428b8ac92efcc1b36936925 data\mtwa\loot_table\blocks\tombstone.json
+d1c30285510fac24edee627826654949878a05dd data\mtwa\loot_table\blocks\eternite_weapon_anvil.json
+68ae200fd33eb50c09cdef2c153c17dba5b747d3 data\mtwa\loot_table\blocks\titanite_block.json
+9eb6f7155c395a4c90ee743c2e2735a48ac8ca06 data\mtwa\loot_table\blocks\eternite_tool_anvil.json
+fb55ff7e3ae2cf06845ba7b878c7c0f25a852900 data\mtwa\loot_table\blocks\aetherite_armor_anvil.json
+59271bf97ed179f5db0b1a4adc4320eb84fb70f6 data\mtwa\loot_table\blocks\aetherite_tool_anvil.json
 6101bea0b190da0833380129b6286735ed14d61b data\mtwa\loot_table\blocks\ancient_titanite_debris1.json
+1c686d895787eb6b9baafb6d0993031030bc8c18 data\mtwa\loot_table\blocks\titanite_armor_anvil.json

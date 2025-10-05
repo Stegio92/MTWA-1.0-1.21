@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mtwa:aetherite_ingot"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "R": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    " R ",
+    "RAR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:aetherite_weapon_anvil"
+  }
+}

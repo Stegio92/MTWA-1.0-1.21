@@ -25,24 +25,49 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.AETHERITE_CORE1)
                 .add(ModBlocks.TITANITE_BLOCK)
                 .add(ModBlocks.TITANITE_CORE)
+                .add(ModBlocks.ETERNITE_BLOCK)
+                .add(ModBlocks.ETERNITE_CORE)
                 .add(ModBlocks.ANCIENT_AETHERITE_DEBRIS1)
                 .add(ModBlocks.ANCIENT_TITANITE_DEBRIS1)
+                .add(ModBlocks.ANCIENT_ETERNITE_DEBRIS1)
+                .add(ModBlocks.AETHERITE_ARMOR_ANVIL)
+                .add(ModBlocks.TITANITE_ARMOR_ANVIL)
+                .add(ModBlocks.ETERNITE_ARMOR_ANVIL)
+                .add(ModBlocks.AETHERITE_WEAPON_ANVIL)
+                .add(ModBlocks.TITANITE_WEAPON_ANVIL)
+                .add(ModBlocks.ETERNITE_WEAPON_ANVIL)
+                .add(ModBlocks.AETHERITE_TOOL_ANVIL)
+                .add(ModBlocks.TITANITE_TOOL_ANVIL)
+                .add(ModBlocks.ETERNITE_TOOL_ANVIL)
                 .add(ModBlocks.TOMBSTONE);
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_AETHERITE_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_TITANITE_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ETERNITE_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.ANCIENT_AETHERITE_DEBRIS1)
-                .add(ModBlocks.AETHERITE_CORE1);
-        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_AETHERITE_TOOL)
+                .add(ModBlocks.AETHERITE_CORE1)
+                .add(ModBlocks.AETHERITE_BLOCK)
                 .add(ModBlocks.ANCIENT_TITANITE_DEBRIS1)
-                .add(ModBlocks.TITANITE_CORE);
-        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_TITANITE_TOOL)
-                .add(ModBlocks.ANCIENT_TITANITE_DEBRIS1)
-                .add(ModBlocks.TITANITE_CORE);
+                .add(ModBlocks.TITANITE_CORE)
+                .add(ModBlocks.TITANITE_BLOCK)
+                .add(ModBlocks.ANCIENT_ETERNITE_DEBRIS1)
+                .add(ModBlocks.ETERNITE_CORE)
+                .add(ModBlocks.ETERNITE_BLOCK)
+                .add(ModBlocks.AETHERITE_ARMOR_ANVIL)
+                .add(ModBlocks.TITANITE_ARMOR_ANVIL)
+                .add(ModBlocks.ETERNITE_ARMOR_ANVIL)
+                .add(ModBlocks.AETHERITE_WEAPON_ANVIL)
+                .add(ModBlocks.TITANITE_WEAPON_ANVIL)
+                .add(ModBlocks.ETERNITE_WEAPON_ANVIL)
+                .add(ModBlocks.AETHERITE_TOOL_ANVIL)
+                .add(ModBlocks.TITANITE_TOOL_ANVIL)
+                .add(ModBlocks.ETERNITE_TOOL_ANVIL);
+
 
     }
 }

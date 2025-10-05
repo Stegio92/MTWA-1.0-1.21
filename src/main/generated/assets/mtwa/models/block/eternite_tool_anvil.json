@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_anvil",
+  "textures": {
+    "top": "mtwa:block/eternite_tool_anvil_top"
+  }
+}

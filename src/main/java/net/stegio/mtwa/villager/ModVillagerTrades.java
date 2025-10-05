@@ -1,0 +1,44 @@
+package net.stegio.mtwa.villager;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.village.TradeOffer;
+import net.minecraft.village.TradeOfferList;
+import net.minecraft.village.TradedItem;
+import net.stegio.mtwa.item.ModItems;
+
+import java.util.Optional;
+
+public class ModVillagerTrades {
+    public static TradeOfferList getTradesForExpertArmorer(int level) {
+        TradeOfferList trades = new TradeOfferList();
+
+        switch (level) {
+            case 1 -> {
+                trades.add(new TradeOffer(new TradedItem(ModItems.AETHERITE_INGOT, 1),
+                        new ItemStack(ModItems.GOLDEN_RYO_BUNDLE, 1), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 2),
+                        new ItemStack(ModItems.AETHERITE_INGOT, 1), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 4), Optional.of(new TradedItem(Items.NETHERITE_HELMET)),
+                        new ItemStack(ModItems.AETHERITE_HELMET1, 1), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 6), Optional.of(new TradedItem(Items.NETHERITE_CHESTPLATE)),
+                        new ItemStack(ModItems.AETHERITE_CHESTPLATE1, 1), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 5), Optional.of(new TradedItem(Items.NETHERITE_LEGGINGS)),
+                        new ItemStack(ModItems.AETHERITE_LEGGINGS1, 1), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 3), Optional.of(new TradedItem(Items.NETHERITE_BOOTS)),
+                        new ItemStack(ModItems.AETHERITE_BOOTS1, 1), 8, 1, 0));
+            }
+            case 2 -> {
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 5), Optional.of(new TradedItem(ModItems.AETHERITE_HELMET1)),
+                        new ItemStack(ModItems.AETHERITE_HELMET2, 1), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 7), Optional.of(new TradedItem(ModItems.AETHERITE_CHESTPLATE1)),
+                        new ItemStack(ModItems.AETHERITE_CHESTPLATE2, 1), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 6), Optional.of(new TradedItem(ModItems.AETHERITE_LEGGINGS1)),
+                        new ItemStack(ModItems.AETHERITE_LEGGINGS2, 1), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 4), Optional.of(new TradedItem(ModItems.AETHERITE_BOOTS1)),
+                        new ItemStack(ModItems.AETHERITE_BOOTS2, 1), 8, 1, 0));
+            }
+        }
+        return trades;
+    }
+}

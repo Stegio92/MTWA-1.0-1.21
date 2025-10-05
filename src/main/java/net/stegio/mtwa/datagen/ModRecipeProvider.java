@@ -2,6 +2,7 @@ package net.stegio.mtwa.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
@@ -30,6 +31,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter recipeExporter) {
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.AETHERITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.AETHERITE_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.TITANITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.TITANITE_BLOCK);
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ETERNITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.ETERNITE_BLOCK);
+
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.BRONZE_RYO, RecipeCategory.MISC, ModItems.BRONZE_RYO_BUNDLE);
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.SILVER_RYO, RecipeCategory.MISC, ModItems.SILVER_RYO_BUNDLE);
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, ModItems.GOLDEN_RYO, RecipeCategory.MISC, ModItems.GOLDEN_RYO_BUNDLE);
 
         offerSmelting(recipeExporter, List.of(ModBlocks.ANCIENT_AETHERITE_DEBRIS1), RecipeCategory.MISC, ModItems.AETHERITE_SCRAP, 1f, 400, "aetherite_scrap");
         offerBlasting(recipeExporter, List.of(ModBlocks.ANCIENT_AETHERITE_DEBRIS1), RecipeCategory.MISC, ModItems.AETHERITE_SCRAP, 0.5f, 200, "aetherite_scrap");
@@ -37,7 +43,154 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(recipeExporter, List.of(ModBlocks.ANCIENT_TITANITE_DEBRIS1), RecipeCategory.MISC, ModItems.TITANITE_SCRAP, 1.5f, 500, "titanite_scrap");
         offerBlasting(recipeExporter, List.of(ModBlocks.ANCIENT_TITANITE_DEBRIS1), RecipeCategory.MISC, ModItems.TITANITE_SCRAP, 0.75f, 250, "titanite_scrap");
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.WOODEN_KATANA)
+        offerSmelting(recipeExporter, List.of(ModBlocks.ANCIENT_ETERNITE_DEBRIS1), RecipeCategory.MISC, ModItems.ETERNITE_SCRAP, 2f, 600, "eternite_scrap");
+        offerBlasting(recipeExporter, List.of(ModBlocks.ANCIENT_ETERNITE_DEBRIS1), RecipeCategory.MISC, ModItems.ETERNITE_SCRAP, 1f, 300, "eternite_scrap");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AETHERITE_INGOT)
+                .pattern("NAN")
+                .pattern("AEA")
+                .pattern("NAN")
+                .input('A', ModItems.AETHERITE_SCRAP)
+                .input('E', ModItems.ESSENCE_OF_THE_SKY)
+                .input('N', Items.NETHERITE_INGOT)
+                .criterion(hasItem(ModItems.AETHERITE_SCRAP), conditionsFromItem(ModItems.AETHERITE_SCRAP))
+                .criterion(hasItem(ModItems.ESSENCE_OF_THE_SKY), conditionsFromItem(ModItems.ESSENCE_OF_THE_SKY))
+                .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "aetherite_ingot9"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TITANITE_INGOT)
+                .pattern("ATA")
+                .pattern("TET")
+                .pattern("ATA")
+                .input('T', ModItems.TITANITE_SCRAP)
+                .input('E', ModItems.ESSENCE_OF_THE_SUN)
+                .input('A', ModItems.AETHERITE_INGOT)
+                .criterion(hasItem(ModItems.TITANITE_SCRAP), conditionsFromItem(ModItems.TITANITE_SCRAP))
+                .criterion(hasItem(ModItems.ESSENCE_OF_THE_SUN), conditionsFromItem(ModItems.ESSENCE_OF_THE_SUN))
+                .criterion(hasItem(ModItems.AETHERITE_INGOT), conditionsFromItem(ModItems.AETHERITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_ingot9"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TITANITE_INGOT)
+                .pattern("ATA")
+                .pattern("TET")
+                .pattern("ATA")
+                .input('T', ModItems.ETERNITE_SCRAP)
+                .input('E', ModItems.ESSENCE_OF_THE_UNIVERSE)
+                .input('A', ModItems.TITANITE_INGOT)
+                .criterion(hasItem(ModItems.ETERNITE_SCRAP), conditionsFromItem(ModItems.ETERNITE_SCRAP))
+                .criterion(hasItem(ModItems.ESSENCE_OF_THE_UNIVERSE), conditionsFromItem(ModItems.ESSENCE_OF_THE_UNIVERSE))
+                .criterion(hasItem(ModItems.TITANITE_INGOT), conditionsFromItem(ModItems.TITANITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_ingot9"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.AETHERITE_ARMOR_ANVIL)
+                .pattern("III")
+                .pattern(" R ")
+                .pattern("ARR")
+                .input('I', Blocks.IRON_BLOCK)
+                .input('R', Items.IRON_INGOT)
+                .input('A', ModItems.AETHERITE_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Blocks.IRON_BLOCK), conditionsFromItem(Blocks.IRON_BLOCK))
+                .criterion(hasItem(ModItems.AETHERITE_INGOT), conditionsFromItem(ModItems.AETHERITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "aetherite_armor_anvil"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.AETHERITE_WEAPON_ANVIL)
+                .pattern("III")
+                .pattern(" R ")
+                .pattern("RAR")
+                .input('I', Blocks.IRON_BLOCK)
+                .input('R', Items.IRON_INGOT)
+                .input('A', ModItems.AETHERITE_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Blocks.IRON_BLOCK), conditionsFromItem(Blocks.IRON_BLOCK))
+                .criterion(hasItem(ModItems.AETHERITE_INGOT), conditionsFromItem(ModItems.AETHERITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "aetherite_weapon_anvil"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.AETHERITE_TOOL_ANVIL)
+                .pattern("III")
+                .pattern(" R ")
+                .pattern("RRA")
+                .input('I', Blocks.IRON_BLOCK)
+                .input('R', Items.IRON_INGOT)
+                .input('A', ModItems.AETHERITE_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Blocks.IRON_BLOCK), conditionsFromItem(Blocks.IRON_BLOCK))
+                .criterion(hasItem(ModItems.AETHERITE_INGOT), conditionsFromItem(ModItems.AETHERITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "aetherite_tool_anvil"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.TITANITE_ARMOR_ANVIL)
+                .pattern("III")
+                .pattern(" R ")
+                .pattern("ARR")
+                .input('I', Blocks.IRON_BLOCK)
+                .input('R', Items.IRON_INGOT)
+                .input('A', ModItems.TITANITE_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Blocks.IRON_BLOCK), conditionsFromItem(Blocks.IRON_BLOCK))
+                .criterion(hasItem(ModItems.TITANITE_INGOT), conditionsFromItem(ModItems.TITANITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_armor_anvil"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.TITANITE_WEAPON_ANVIL)
+                .pattern("III")
+                .pattern(" R ")
+                .pattern("RAR")
+                .input('I', Blocks.IRON_BLOCK)
+                .input('R', Items.IRON_INGOT)
+                .input('A', ModItems.TITANITE_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Blocks.IRON_BLOCK), conditionsFromItem(Blocks.IRON_BLOCK))
+                .criterion(hasItem(ModItems.TITANITE_INGOT), conditionsFromItem(ModItems.TITANITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_weapon_anvil"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.TITANITE_TOOL_ANVIL)
+                .pattern("III")
+                .pattern(" R ")
+                .pattern("RRA")
+                .input('I', Blocks.IRON_BLOCK)
+                .input('R', Items.IRON_INGOT)
+                .input('A', ModItems.TITANITE_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Blocks.IRON_BLOCK), conditionsFromItem(Blocks.IRON_BLOCK))
+                .criterion(hasItem(ModItems.TITANITE_INGOT), conditionsFromItem(ModItems.TITANITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_tool_anvil"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ETERNITE_ARMOR_ANVIL)
+                .pattern("III")
+                .pattern(" R ")
+                .pattern("ARR")
+                .input('I', Blocks.IRON_BLOCK)
+                .input('R', Items.IRON_INGOT)
+                .input('A', ModItems.ETERNITE_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Blocks.IRON_BLOCK), conditionsFromItem(Blocks.IRON_BLOCK))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_armor_anvil"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ETERNITE_WEAPON_ANVIL)
+                .pattern("III")
+                .pattern(" R ")
+                .pattern("RAR")
+                .input('I', Blocks.IRON_BLOCK)
+                .input('R', Items.IRON_INGOT)
+                .input('A', ModItems.AETHERITE_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Blocks.IRON_BLOCK), conditionsFromItem(Blocks.IRON_BLOCK))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_weapon_anvil"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ETERNITE_TOOL_ANVIL)
+                .pattern("III")
+                .pattern(" R ")
+                .pattern("RRA")
+                .input('I', Blocks.IRON_BLOCK)
+                .input('R', Items.IRON_INGOT)
+                .input('A', ModItems.AETHERITE_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Blocks.IRON_BLOCK), conditionsFromItem(Blocks.IRON_BLOCK))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_tool_anvil"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.TOMBSTONE)
                 .pattern("S")
                 .pattern("S")
                 .pattern("S")
@@ -243,6 +396,86 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TITANITE_UPGRADE_SMITHING_TEMPLATE5), conditionsFromItem(ModItems.TITANITE_UPGRADE_SMITHING_TEMPLATE5))
                 .criterion(hasItem(ModItems.TITANITE_INGOT), conditionsFromItem(ModItems.TITANITE_INGOT))
                 .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_upgrade_smithing_template5_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1)
+                .pattern("ANA")
+                .input('A', ModItems.ETERNITE_INGOT)
+                .input('N', ModItems.TITANITE_UPGRADE_SMITHING_TEMPLATE5)
+                .criterion(hasItem(ModItems.TITANITE_UPGRADE_SMITHING_TEMPLATE5), conditionsFromItem(ModItems.TITANITE_UPGRADE_SMITHING_TEMPLATE5))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_upgrade_smithing_template_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1, 2)
+                .pattern("A*A")
+                .input('A', ModItems.ETERNITE_INGOT)
+                .input('*', ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1)
+                .criterion(hasItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1), conditionsFromItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_upgrade_smithing_template_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2)
+                .pattern("A*A")
+                .input('A', ModItems.ETERNITE_INGOT)
+                .input('*', ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1)
+                .criterion(hasItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1), conditionsFromItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_upgrade_smithing_template2_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2, 2)
+                .pattern("A*A")
+                .input('A', ModItems.ETERNITE_INGOT)
+                .input('*', ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2)
+                .criterion(hasItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2), conditionsFromItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_upgrade_smithing_template2_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3)
+                .pattern("A*A")
+                .input('A', ModItems.ETERNITE_INGOT)
+                .input('*', ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2)
+                .criterion(hasItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2), conditionsFromItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_upgrade_smithing_template3_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3, 2)
+                .pattern("A*A")
+                .input('A', ModItems.ETERNITE_INGOT)
+                .input('*', ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3)
+                .criterion(hasItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3), conditionsFromItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_upgrade_smithing_template3_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4)
+                .pattern("A*A")
+                .input('A', ModItems.ETERNITE_INGOT)
+                .input('*', ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3)
+                .criterion(hasItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3), conditionsFromItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_upgrade_smithing_template4_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4, 2)
+                .pattern("A*A")
+                .input('A', ModItems.ETERNITE_INGOT)
+                .input('*', ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4)
+                .criterion(hasItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4), conditionsFromItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_upgrade_smithing_template4_2"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5)
+                .pattern("A*A")
+                .input('A', ModItems.ETERNITE_INGOT)
+                .input('*', ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4)
+                .criterion(hasItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4), conditionsFromItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_upgrade_smithing_template5_1"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5, 2)
+                .pattern("A*A")
+                .input('A', ModItems.ETERNITE_INGOT)
+                .input('*', ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5)
+                .criterion(hasItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5), conditionsFromItem(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_upgrade_smithing_template5_2"));
 
         SmithingTransformRecipeJsonBuilder.create(
                         Ingredient.ofItems(ModItems.AETHERITE_UPGRADE_SMITHING_TEMPLATE),
@@ -469,7 +702,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         Ingredient.ofItems(ModItems.TITANITE_INGOT),
                         RecipeCategory.MISC,
                         ModItems.TITANITE_KATANA2
-                ).criterion("has_titanite_katana", conditionsFromItem(ModItems.TITANITE_KATANA2))
+                ).criterion("has_titanite_katana", conditionsFromItem(ModItems.TITANITE_KATANA1))
                 .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_katana2"));
 
         SmithingTransformRecipeJsonBuilder.create(
@@ -478,7 +711,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         Ingredient.ofItems(ModItems.TITANITE_INGOT),
                         RecipeCategory.MISC,
                         ModItems.TITANITE_KATANA3
-                ).criterion("has_titanite_katana2", conditionsFromItem(ModItems.TITANITE_KATANA3))
+                ).criterion("has_titanite_katana2", conditionsFromItem(ModItems.TITANITE_KATANA2))
                 .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_katana3"));
 
         SmithingTransformRecipeJsonBuilder.create(
@@ -487,7 +720,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         Ingredient.ofItems(ModItems.TITANITE_INGOT),
                         RecipeCategory.MISC,
                         ModItems.TITANITE_KATANA4
-                ).criterion("has_titanite_katana3", conditionsFromItem(ModItems.TITANITE_KATANA4))
+                ).criterion("has_titanite_katana3", conditionsFromItem(ModItems.TITANITE_KATANA3))
                 .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_katana4"));
 
         SmithingTransformRecipeJsonBuilder.create(
@@ -496,7 +729,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         Ingredient.ofItems(ModItems.TITANITE_INGOT),
                         RecipeCategory.MISC,
                         ModItems.TITANITE_KATANA5
-                ).criterion("has_titanite_katana4", conditionsFromItem(ModItems.TITANITE_KATANA5))
+                ).criterion("has_titanite_katana4", conditionsFromItem(ModItems.TITANITE_KATANA4))
                 .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_katana5"));
 
         SmithingTransformRecipeJsonBuilder.create(
@@ -662,6 +895,215 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         ModItems.TITANITE_HOE5
                 ).criterion("has_titanite_hoe4", conditionsFromItem(ModItems.TITANITE_HOE4))
                 .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_hoe5"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1),
+                        Ingredient.ofItems(ModItems.TITANITE_KATANA5),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_KATANA1
+                ).criterion("has_titanite_katana5", conditionsFromItem(ModItems.TITANITE_KATANA5))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_katana1"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_KATANA1),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_KATANA2
+                ).criterion("has_eternite_katana1", conditionsFromItem(ModItems.ETERNITE_KATANA1))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_katana2"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_KATANA2),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_KATANA3
+                ).criterion("has_eternite_katana2", conditionsFromItem(ModItems.ETERNITE_KATANA2))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_katana3"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_KATANA3),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_KATANA4
+                ).criterion("has_eternite_katana3", conditionsFromItem(ModItems.ETERNITE_KATANA3))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_katana4"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_KATANA4),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_KATANA5
+                ).criterion("has_eternite_katana4", conditionsFromItem(ModItems.ETERNITE_KATANA4))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_katana5"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1),
+                        Ingredient.ofItems(ModItems.TITANITE_AXE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_AXE1
+                ).criterion("has_titanite_axe5", conditionsFromItem(ModItems.TITANITE_AXE5))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_axe1"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_AXE1),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_AXE2
+                ).criterion("has_eternite_axe1", conditionsFromItem(ModItems.ETERNITE_AXE1))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_axe2"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_AXE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_AXE3
+                ).criterion("has_eternite_axe2", conditionsFromItem(ModItems.ETERNITE_AXE2))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_axe3"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_AXE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_AXE4
+                ).criterion("has_eternite_axe3", conditionsFromItem(ModItems.ETERNITE_AXE3))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_axe4"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_AXE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_AXE5
+                ).criterion("has_eternite_axe4", conditionsFromItem(ModItems.ETERNITE_AXE4))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_axe5"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1),
+                        Ingredient.ofItems(ModItems.TITANITE_PICKAXE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_PICKAXE1
+                ).criterion("has_titanite_pickaxe5", conditionsFromItem(ModItems.TITANITE_PICKAXE5))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_pickaxe1"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_PICKAXE1),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_PICKAXE2
+                ).criterion("has_eternite_pickaxe1", conditionsFromItem(ModItems.ETERNITE_PICKAXE1))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_pickaxe2"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_PICKAXE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_PICKAXE3
+                ).criterion("has_eternite_pickaxe2", conditionsFromItem(ModItems.ETERNITE_PICKAXE2))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_pickaxe3"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_PICKAXE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_PICKAXE4
+                ).criterion("has_eternite_pickaxe3", conditionsFromItem(ModItems.ETERNITE_PICKAXE3))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_pickaxe4"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_PICKAXE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_PICKAXE5
+                ).criterion("has_eternite_pickaxe4", conditionsFromItem(ModItems.ETERNITE_PICKAXE4))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_pickaxe5"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1),
+                        Ingredient.ofItems(ModItems.TITANITE_SHOVEL5),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_SHOVEL1
+                ).criterion("has_titanite_shovel5", conditionsFromItem(ModItems.TITANITE_SHOVEL5))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_shovel1"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_SHOVEL1),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_SHOVEL2
+                ).criterion("has_eternite_shovel1", conditionsFromItem(ModItems.ETERNITE_SHOVEL1))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_shovel2"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_SHOVEL2),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_SHOVEL3
+                ).criterion("has_eternite_shovel2", conditionsFromItem(ModItems.ETERNITE_SHOVEL2))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_shovel3"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_SHOVEL3),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_SHOVEL4
+                ).criterion("has_eternite_shovel3", conditionsFromItem(ModItems.ETERNITE_SHOVEL3))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_shovel4"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_SHOVEL4),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_SHOVEL5
+                ).criterion("has_eternite_shovel4", conditionsFromItem(ModItems.ETERNITE_SHOVEL4))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_shovel5"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1),
+                        Ingredient.ofItems(ModItems.TITANITE_HOE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_HOE1
+                ).criterion("has_titanite_hoe5", conditionsFromItem(ModItems.TITANITE_HOE5))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_hoe1"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_HOE1),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_HOE2
+                ).criterion("has_eternite_hoe1", conditionsFromItem(ModItems.ETERNITE_HOE1))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_hoe2"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_HOE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_HOE3
+                ).criterion("has_eternite_hoe2", conditionsFromItem(ModItems.ETERNITE_HOE2))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_hoe3"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_HOE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_HOE4
+                ).criterion("has_eternite_hoe3", conditionsFromItem(ModItems.ETERNITE_HOE3))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_hoe4"));
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_HOE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_HOE5
+                ).criterion("has_eternite_hoe4", conditionsFromItem(ModItems.ETERNITE_HOE4))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_hoe5"));
 
         SmithingTransformRecipeJsonBuilder.create(
                         Ingredient.ofItems(ModItems.AETHERITE_UPGRADE_SMITHING_TEMPLATE),
@@ -1023,6 +1465,186 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 ).criterion("has_titanite_boots4", conditionsFromItem(ModItems.TITANITE_BOOTS4))
                 .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_boots5"));
 
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1),
+                        Ingredient.ofItems(ModItems.TITANITE_HELMET5),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_HELMET1
+                ).criterion("has_titanite_helmet5", conditionsFromItem(ModItems.TITANITE_HELMET5))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_helmet1"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_HELMET1),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_HELMET2
+                ).criterion("has_eternite_helmet1", conditionsFromItem(ModItems.ETERNITE_HELMET1))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_helmet2"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_HELMET2),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_HELMET3
+                ).criterion("has_titanite_helmet2", conditionsFromItem(ModItems.ETERNITE_HELMET2))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_helmet3"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_HELMET3),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_HELMET4
+                ).criterion("has_eternite_helmet3", conditionsFromItem(ModItems.ETERNITE_HELMET3))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_helmet4"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_HELMET4),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_HELMET5
+                ).criterion("has_eternite_helmet4", conditionsFromItem(ModItems.ETERNITE_HELMET4))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_helmet5"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1),
+                        Ingredient.ofItems(ModItems.TITANITE_CHESTPLATE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_CHESTPLATE1
+                ).criterion("has_titanite_chestplate5", conditionsFromItem(ModItems.TITANITE_CHESTPLATE5))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_chestplate1"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_CHESTPLATE1),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_CHESTPLATE2
+                ).criterion("has_eternite_chestplate1", conditionsFromItem(ModItems.ETERNITE_CHESTPLATE1))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_chestplate2"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_CHESTPLATE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_CHESTPLATE3
+                ).criterion("has_eternite_chestplate2", conditionsFromItem(ModItems.ETERNITE_CHESTPLATE2))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_chestplate3"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_CHESTPLATE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_CHESTPLATE4
+                ).criterion("has_eternite_chestplate3", conditionsFromItem(ModItems.ETERNITE_CHESTPLATE3))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_chestplate4"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_CHESTPLATE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_CHESTPLATE5
+                ).criterion("has_eternite_chestplate4", conditionsFromItem(ModItems.ETERNITE_CHESTPLATE4))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_chestplate5"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1),
+                        Ingredient.ofItems(ModItems.TITANITE_LEGGINGS5),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_LEGGINGS1
+                ).criterion("has_titanite_leggings5", conditionsFromItem(ModItems.TITANITE_LEGGINGS5))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_leggings1"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_LEGGINGS1),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_LEGGINGS2
+                ).criterion("has_eternite_leggings1", conditionsFromItem(ModItems.ETERNITE_LEGGINGS1))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_leggings2"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_LEGGINGS2),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_LEGGINGS3
+                ).criterion("has_eternite_leggings2", conditionsFromItem(ModItems.ETERNITE_LEGGINGS2))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_leggings3"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_LEGGINGS3),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_LEGGINGS4
+                ).criterion("has_eternite_leggings3", conditionsFromItem(ModItems.ETERNITE_LEGGINGS3))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_leggings4"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_LEGGINGS4),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_LEGGINGS5
+                ).criterion("has_eternite_leggings4", conditionsFromItem(ModItems.ETERNITE_LEGGINGS4))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_leggings5"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1),
+                        Ingredient.ofItems(ModItems.TITANITE_BOOTS5),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_BOOTS1
+                ).criterion("has_titanite_boots5", conditionsFromItem(ModItems.TITANITE_BOOTS5))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_boots1"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2),
+                        Ingredient.ofItems(ModItems.ETERNITE_BOOTS1),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_BOOTS2
+                ).criterion("has_eternite_boots1", conditionsFromItem(ModItems.ETERNITE_BOOTS1))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_boots2"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3),
+                        Ingredient.ofItems(ModItems.ETERNITE_BOOTS2),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_BOOTS3
+                ).criterion("has_eternite_boots2", conditionsFromItem(ModItems.ETERNITE_BOOTS2))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_boots3"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4),
+                        Ingredient.ofItems(ModItems.ETERNITE_BOOTS3),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_BOOTS4
+                ).criterion("has_eternite_boots3", conditionsFromItem(ModItems.ETERNITE_BOOTS3))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_boots4"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5),
+                        Ingredient.ofItems(ModItems.ETERNITE_BOOTS4),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_BOOTS5
+                ).criterion("has_eternite_boots4", conditionsFromItem(ModItems.ETERNITE_BOOTS4))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_boots5"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AETHERITE_CORE1, 1)
                 .pattern("AAA")
                 .pattern("A#A")
@@ -1043,6 +1665,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TITANITE_INGOT), conditionsFromItem(ModItems.TITANITE_INGOT))
                 .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_core"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_CORE, 1)
+                .pattern("EEE")
+                .pattern("E#E")
+                .pattern("EEE")
+                .input('E', ModItems.ETERNITE_INGOT)
+                .input('#', ModItems.TITANITE_CORE)
+                .criterion(hasItem(ModItems.TITANITE_CORE), conditionsFromItem(ModItems.TITANITE_CORE))
+                .criterion(hasItem(ModItems.ETERNITE_INGOT), conditionsFromItem(ModItems.ETERNITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_core"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AETHERITE_MACE)
                 .pattern("*")
                 .pattern("B")
@@ -1060,6 +1692,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TITANITE_CORE), conditionsFromItem(ModItems.TITANITE_CORE))
                 .criterion(hasItem(Items.BREEZE_ROD), conditionsFromItem(Items.BREEZE_ROD))
                 .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_mace"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_MACE)
+                .pattern("*")
+                .pattern("B")
+                .input('*', ModItems.ETERNITE_CORE)
+                .input('B', Items.BREEZE_ROD)
+                .criterion(hasItem(ModItems.ETERNITE_CORE), conditionsFromItem(ModItems.ETERNITE_CORE))
+                .criterion(hasItem(Items.BREEZE_ROD), conditionsFromItem(Items.BREEZE_ROD))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_mace"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.DIAMOND_HORSE_ARMOR)
                 .pattern("  D")
@@ -1101,8 +1742,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         Ingredient.ofItems(ModItems.TITANITE_INGOT),
                         RecipeCategory.MISC,
                         ModItems.TITANITE_HORSE_ARMOR
-                ).criterion("has_titanite_horse_armor", conditionsFromItem(ModItems.AETHERITE_HORSE_ARMOR))
+                ).criterion("has_aetherite_horse_armor", conditionsFromItem(ModItems.AETHERITE_HORSE_ARMOR))
                 .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_horse_armor"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1),
+                        Ingredient.ofItems(ModItems.TITANITE_HORSE_ARMOR),
+                        Ingredient.ofItems(ModItems.ETERNITE_INGOT),
+                        RecipeCategory.MISC,
+                        ModItems.ETERNITE_HORSE_ARMOR
+                ).criterion("has_titanite_horse_armor", conditionsFromItem(ModItems.TITANITE_HORSE_ARMOR))
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_horse_armor"));
+
 
 
     }

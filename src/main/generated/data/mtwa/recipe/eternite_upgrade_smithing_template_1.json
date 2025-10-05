@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mtwa:eternite_ingot"
+    },
+    "N": {
+      "item": "mtwa:titanite_upgrade_smithing_template5"
+    }
+  },
+  "pattern": [
+    "ANA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:eternite_upgrade_smithing_template1"
+  }
+}

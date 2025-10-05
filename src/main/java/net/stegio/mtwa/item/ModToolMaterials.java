@@ -20,7 +20,12 @@ public enum ModToolMaterials implements ToolMaterial {
     TITANITE2(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL, 3100, 26.0F, 11.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
     TITANITE3(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL, 3200, 27.0F, 12.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
     TITANITE4(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL, 3300, 28.0F, 13.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
-    TITANITE5(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL, 3400, 30.0F, 14.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT));
+    TITANITE5(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL, 3400, 30.0F, 14.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
+    ETERNITE1(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL, 3500, 31.0F, 15.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
+    ETERNITE2(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL, 3600, 32.0F, 16.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
+    ETERNITE3(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL, 3700, 33.0F, 17.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
+    ETERNITE4(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL, 3800, 34.0F, 18.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
+    ETERNITE5(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL, 4000, 35.0F, 20.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

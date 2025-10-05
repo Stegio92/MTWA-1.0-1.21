@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mtwa:aetherite_scrap"
+    },
+    "E": {
+      "item": "mtwa:essence_of_the_sky"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "NAN",
+    "AEA",
+    "NAN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:aetherite_ingot"
+  }
+}

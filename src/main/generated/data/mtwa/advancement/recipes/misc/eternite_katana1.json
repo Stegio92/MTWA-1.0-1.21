@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mtwa:eternite_katana1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_titanite_katana5": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_katana5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_titanite_katana5"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mtwa:eternite_katana1"
+    ]
+  }
+}

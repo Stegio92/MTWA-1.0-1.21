@@ -12,22 +12,35 @@ public class ModOreGeneration {
                 ModPlacedFeatures.OVERWORLD_ANCIENT_AETHERITE_DEBRIS_PLACED_KEY1);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.OVERWORLD_ANCIENT_TITANITE_DEBRIS_PLACED_KEY1);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.OVERWORLD_ANCIENT_ETERNITE_DEBRIS_PLACED_KEY1);
 
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ANCIENT_AETHERITE_DEBRIS_PLACED_KEY1);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ANCIENT_TITANITE_DEBRIS_PLACED_KEY1);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.ANCIENT_ETERNITE_DEBRIS_PLACED_KEY1);
+
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ANCIENT_AETHERITE_DEBRIS_PLACED_KEY2);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ANCIENT_TITANITE_DEBRIS_PLACED_KEY2);
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.ANCIENT_ETERNITE_DEBRIS_PLACED_KEY2);
+
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ANCIENT_AETHERITE_DEBRIS_PLACED_KEY3);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ANCIENT_TITANITE_DEBRIS_PLACED_KEY3);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.ANCIENT_ETERNITE_DEBRIS_PLACED_KEY3);
+
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ANCIENT_AETHERITE_DEBRIS_PLACED_KEY4);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ANCIENT_TITANITE_DEBRIS_PLACED_KEY4);
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.ANCIENT_ETERNITE_DEBRIS_PLACED_KEY4);
     }
 }

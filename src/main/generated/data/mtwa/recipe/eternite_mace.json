@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "*": {
+      "item": "mtwa:eternite_core"
+    },
+    "B": {
+      "item": "minecraft:breeze_rod"
+    }
+  },
+  "pattern": [
+    "*",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:eternite_mace"
+  }
+}

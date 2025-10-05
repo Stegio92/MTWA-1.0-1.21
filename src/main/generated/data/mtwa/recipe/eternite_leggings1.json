@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mtwa:eternite_ingot"
+  },
+  "base": {
+    "item": "mtwa:titanite_leggings5"
+  },
+  "result": {
+    "count": 1,
+    "id": "mtwa:eternite_leggings1"
+  },
+  "template": {
+    "item": "mtwa:eternite_upgrade_smithing_template1"
+  }
+}

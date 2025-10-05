@@ -1,7 +1,5 @@
 {
   "values": [
-    "#minecraft:needs_diamond_tool",
-    "mtwa:ancient_titanite_debris1",
-    "mtwa:titanite_core"
+    "#minecraft:needs_diamond_tool"
   ]
 }

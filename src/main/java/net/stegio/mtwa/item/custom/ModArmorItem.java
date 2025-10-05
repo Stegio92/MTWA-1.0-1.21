@@ -53,6 +53,33 @@ public class ModArmorItem extends ArmorItem {
                             List.of(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0, false, false),
                                     new StatusEffectInstance(StatusEffects.HASTE, 400, 5, false, false),
                                     new StatusEffectInstance(StatusEffects.STRENGTH, 400, 2, false, false)))
+                    .put(ModArmorMaterials.ETERNITE_ARMOR_MATERIAL1,
+                            List.of(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0, false, false),
+                                    new StatusEffectInstance(StatusEffects.HASTE, 400, 5, false, false),
+                                    new StatusEffectInstance(StatusEffects.STRENGTH, 400, 2, false, false),
+                                    new StatusEffectInstance(StatusEffects.REGENERATION, 400, 0, false, false)))
+                    .put(ModArmorMaterials.ETERNITE_ARMOR_MATERIAL2,
+                            List.of(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0, false, false),
+                                    new StatusEffectInstance(StatusEffects.HASTE, 400, 5, false, false),
+                                    new StatusEffectInstance(StatusEffects.STRENGTH, 400, 3, false, false),
+                                    new StatusEffectInstance(StatusEffects.REGENERATION, 400, 0, false, false)))
+                    .put(ModArmorMaterials.ETERNITE_ARMOR_MATERIAL3,
+                            List.of(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0, false, false),
+                                    new StatusEffectInstance(StatusEffects.HASTE, 400, 6, false, false),
+                                    new StatusEffectInstance(StatusEffects.STRENGTH, 400, 3, false, false),
+                                    new StatusEffectInstance(StatusEffects.REGENERATION, 400, 1, false, false)))
+                    .put(ModArmorMaterials.ETERNITE_ARMOR_MATERIAL4,
+                            List.of(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0, false, false),
+                                    new StatusEffectInstance(StatusEffects.HASTE, 400, 6, false, false),
+                                    new StatusEffectInstance(StatusEffects.STRENGTH, 400, 4, false, false),
+                                    new StatusEffectInstance(StatusEffects.REGENERATION, 400, 1, false, false)))
+
+                    .put(ModArmorMaterials.ETERNITE_ARMOR_MATERIAL5,
+                            List.of(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 400, 0, false, false),
+                                    new StatusEffectInstance(StatusEffects.HASTE, 400, 6, false, false),
+                                    new StatusEffectInstance(StatusEffects.STRENGTH, 400, 4, false, false),
+                                    new StatusEffectInstance(StatusEffects.REGENERATION, 400, 2, false, false)))
+
                     .build();
 
 

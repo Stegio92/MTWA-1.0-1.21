@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mtwa:eternite_ingot"
+  },
+  "base": {
+    "item": "mtwa:eternite_axe2"
+  },
+  "result": {
+    "count": 1,
+    "id": "mtwa:eternite_axe3"
+  },
+  "template": {
+    "item": "mtwa:eternite_upgrade_smithing_template3"
+  }
+}

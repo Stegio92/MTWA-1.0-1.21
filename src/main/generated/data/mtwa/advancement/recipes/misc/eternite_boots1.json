@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mtwa:eternite_boots1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_titanite_boots5": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_boots5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_titanite_boots5"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mtwa:eternite_boots1"
+    ]
+  }
+}

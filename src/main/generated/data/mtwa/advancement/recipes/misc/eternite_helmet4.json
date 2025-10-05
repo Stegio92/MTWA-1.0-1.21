@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_eternite_helmet3": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:eternite_helmet3"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mtwa:eternite_helmet4"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_eternite_helmet3"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mtwa:eternite_helmet4"
+    ]
+  }
+}

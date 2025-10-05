@@ -19,14 +19,23 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> OVERWORLD_ANCIENT_AETHERITE_DEBRIS_KEY1 = registerKey("overworld_ancient_aetherite_debris1");
     public static final RegistryKey<ConfiguredFeature<?, ?>> OVERWORLD_ANCIENT_TITANITE_DEBRIS_KEY1 = registerKey("overworld_ancient_titanite_debris1");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> OVERWORLD_ANCIENT_ETERNITE_DEBRIS_KEY1 = registerKey("overworld_ancient_eternite_debris1");
+
     public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_AETHERITE_DEBRIS_KEY1 = registerKey("ancient_aetherite_debris1");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_TITANITE_DEBRIS_KEY1 = registerKey("ancient_titanite_debris1");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_ETERNITE_DEBRIS_KEY1 = registerKey("ancient_eternite_debris1");
+
     public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_AETHERITE_DEBRIS_KEY2 = registerKey("ancient_aetherite_debris2");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_TITANITE_DEBRIS_KEY2 = registerKey("ancient_titanite_debris2");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_ETERNITE_DEBRIS_KEY2 = registerKey("ancient_eternite_debris2");
+
     public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_AETHERITE_DEBRIS_KEY3 = registerKey("ancient_aetherite_debris3");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_TITANITE_DEBRIS_KEY3 = registerKey("ancient_titanite_debris3");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_ETERNITE_DEBRIS_KEY3 = registerKey("ancient_eternite_debris3");
+
     public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_AETHERITE_DEBRIS_KEY4 = registerKey("ancient_aetherite_debris4");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_TITANITE_DEBRIS_KEY4 = registerKey("ancient_titanite_debris4");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ANCIENT_ETERNITE_DEBRIS_KEY4 = registerKey("ancient_eternite_debris4");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -35,23 +44,34 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldDebris =
                 List.of(
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.ANCIENT_AETHERITE_DEBRIS1.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.ANCIENT_TITANITE_DEBRIS1.getDefaultState()));
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.ANCIENT_TITANITE_DEBRIS1.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.ANCIENT_ETERNITE_DEBRIS1.getDefaultState()));
 
         List<OreFeatureConfig.Target> endDebris =
                 List.of(
                         OreFeatureConfig.createTarget(endReplaceables, ModBlocks.ANCIENT_AETHERITE_DEBRIS1.getDefaultState()),
-                        OreFeatureConfig.createTarget(endReplaceables, ModBlocks.ANCIENT_TITANITE_DEBRIS1.getDefaultState()));
+                        OreFeatureConfig.createTarget(endReplaceables, ModBlocks.ANCIENT_TITANITE_DEBRIS1.getDefaultState()),
+                        OreFeatureConfig.createTarget(endReplaceables, ModBlocks.ANCIENT_ETERNITE_DEBRIS1.getDefaultState()));
 
         register(context, OVERWORLD_ANCIENT_AETHERITE_DEBRIS_KEY1, Feature.ORE, new OreFeatureConfig(overworldDebris, 1));
         register(context, OVERWORLD_ANCIENT_TITANITE_DEBRIS_KEY1, Feature.ORE, new OreFeatureConfig(overworldDebris, 1));
+        register(context, OVERWORLD_ANCIENT_ETERNITE_DEBRIS_KEY1, Feature.ORE, new OreFeatureConfig(overworldDebris, 1));
+
         register(context, ANCIENT_AETHERITE_DEBRIS_KEY1, Feature.ORE, new OreFeatureConfig(endDebris, 1));
         register(context, ANCIENT_TITANITE_DEBRIS_KEY1, Feature.ORE, new OreFeatureConfig(endDebris, 1));
+        register(context, ANCIENT_ETERNITE_DEBRIS_KEY1, Feature.ORE, new OreFeatureConfig(endDebris, 1));
+
         register(context, ANCIENT_AETHERITE_DEBRIS_KEY2, Feature.ORE, new OreFeatureConfig(endDebris, 2));
         register(context, ANCIENT_TITANITE_DEBRIS_KEY2, Feature.ORE, new OreFeatureConfig(endDebris, 2));
+        register(context, ANCIENT_ETERNITE_DEBRIS_KEY2, Feature.ORE, new OreFeatureConfig(endDebris, 2));
+
         register(context, ANCIENT_AETHERITE_DEBRIS_KEY3, Feature.ORE, new OreFeatureConfig(endDebris, 3));
         register(context, ANCIENT_TITANITE_DEBRIS_KEY3, Feature.ORE, new OreFeatureConfig(endDebris, 3));
+        register(context, ANCIENT_ETERNITE_DEBRIS_KEY3, Feature.ORE, new OreFeatureConfig(endDebris, 3));
+
         register(context, ANCIENT_AETHERITE_DEBRIS_KEY4, Feature.ORE, new OreFeatureConfig(endDebris, 4));
         register(context, ANCIENT_TITANITE_DEBRIS_KEY4, Feature.ORE, new OreFeatureConfig(endDebris, 4));
+        register(context, ANCIENT_ETERNITE_DEBRIS_KEY4, Feature.ORE, new OreFeatureConfig(endDebris, 4));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

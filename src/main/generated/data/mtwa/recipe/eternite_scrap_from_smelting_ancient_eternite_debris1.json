@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 600,
+  "experience": 2.0,
+  "group": "eternite_scrap",
+  "ingredient": {
+    "item": "mtwa:ancient_eternite_debris1"
+  },
+  "result": {
+    "id": "mtwa:eternite_scrap"
+  }
+}

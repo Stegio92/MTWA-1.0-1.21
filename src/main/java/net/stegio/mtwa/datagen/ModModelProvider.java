@@ -19,16 +19,38 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AETHERITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TITANITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ETERNITE_BLOCK);
+
+        blockStateModelGenerator.registerAnvil(ModBlocks.AETHERITE_ARMOR_ANVIL);
+        blockStateModelGenerator.registerAnvil(ModBlocks.TITANITE_ARMOR_ANVIL);
+        blockStateModelGenerator.registerAnvil(ModBlocks.ETERNITE_ARMOR_ANVIL);
+        blockStateModelGenerator.registerAnvil(ModBlocks.AETHERITE_WEAPON_ANVIL);
+        blockStateModelGenerator.registerAnvil(ModBlocks.TITANITE_WEAPON_ANVIL);
+        blockStateModelGenerator.registerAnvil(ModBlocks.ETERNITE_WEAPON_ANVIL);
+        blockStateModelGenerator.registerAnvil(ModBlocks.AETHERITE_TOOL_ANVIL);
+        blockStateModelGenerator.registerAnvil(ModBlocks.TITANITE_TOOL_ANVIL);
+        blockStateModelGenerator.registerAnvil(ModBlocks.ETERNITE_TOOL_ANVIL);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.BRONZE_RYO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_RYO_BUNDLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SILVER_RYO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SILVER_RYO_BUNDLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLDEN_RYO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLDEN_RYO_BUNDLE, Models.GENERATED);
+
+
         itemModelGenerator.register(ModItems.AETHERITE_SCRAP, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANITE_SCRAP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETERNITE_SCRAP, Models.GENERATED);
         itemModelGenerator.register(ModItems.ESSENCE_OF_THE_SKY, Models.GENERATED);
         itemModelGenerator.register(ModItems.ESSENCE_OF_THE_SUN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ESSENCE_OF_THE_UNIVERSE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AETHERITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETERNITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.AETHERITE_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.AETHERITE_UPGRADE_SMITHING_TEMPLATE2, Models.GENERATED);
         itemModelGenerator.register(ModItems.AETHERITE_UPGRADE_SMITHING_TEMPLATE3, Models.GENERATED);
@@ -39,6 +61,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TITANITE_UPGRADE_SMITHING_TEMPLATE3, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANITE_UPGRADE_SMITHING_TEMPLATE4, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANITE_UPGRADE_SMITHING_TEMPLATE5, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE1, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE2, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE3, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE4, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.WOODEN_KATANA, Models.HANDHELD);
         itemModelGenerator.register(ModItems.IRON_KATANA, Models.HANDHELD);
@@ -54,6 +81,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TITANITE_KATANA3, Models.HANDHELD);
         itemModelGenerator.register(ModItems.TITANITE_KATANA4, Models.HANDHELD);
         itemModelGenerator.register(ModItems.TITANITE_KATANA5, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_KATANA1, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_KATANA2, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_KATANA3, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_KATANA4, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_KATANA5, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.AETHERITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AETHERITE_AXE2, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AETHERITE_AXE3, Models.HANDHELD);
@@ -74,6 +107,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.AETHERITE_SHOVEL3, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AETHERITE_SHOVEL4, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AETHERITE_SHOVEL5, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.TITANITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.TITANITE_AXE2, Models.HANDHELD);
         itemModelGenerator.register(ModItems.TITANITE_AXE3, Models.HANDHELD);
@@ -95,9 +129,31 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TITANITE_SHOVEL4, Models.HANDHELD);
         itemModelGenerator.register(ModItems.TITANITE_SHOVEL5, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.ETERNITE_AXE1, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_AXE2, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_AXE3, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_AXE4, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_AXE5, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_HOE1, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_HOE2, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_HOE3, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_HOE4, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_HOE5, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_PICKAXE1, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_PICKAXE2, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_PICKAXE3, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_PICKAXE4, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_PICKAXE5, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_SHOVEL1, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_SHOVEL2, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_SHOVEL3, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_SHOVEL4, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_SHOVEL5, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.NETHERITE_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.AETHERITE_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANITE_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETERNITE_HORSE_ARMOR, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AETHERITE_HELMET1));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AETHERITE_HELMET2));
@@ -141,8 +197,34 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.TITANITE_BOOTS4));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.TITANITE_BOOTS5));
 
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_HELMET1));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_HELMET2));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_HELMET3));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_HELMET4));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_HELMET5));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_CHESTPLATE1));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_CHESTPLATE2));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_CHESTPLATE3));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_CHESTPLATE4));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_CHESTPLATE5));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_LEGGINGS1));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_LEGGINGS2));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_LEGGINGS3));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_LEGGINGS4));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_LEGGINGS5));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_BOOTS1));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_BOOTS2));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_BOOTS3));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_BOOTS4));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETERNITE_BOOTS5));
+
         itemModelGenerator.register(ModItems.AETHERITE_MACE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.TITANITE_MACE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETERNITE_MACE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.AETHERITE_CORE1, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TITANITE_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETERNITE_CORE, Models.GENERATED);
 
 
 

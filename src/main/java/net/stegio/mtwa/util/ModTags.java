@@ -12,8 +12,10 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_AETHERITE_TOOL = createTag("needs_aetherite_tool");
         public static final TagKey<Block> NEEDS_TITANITE_TOOL = createTag("needs_titanite_tool");
+        public static final TagKey<Block> NEEDS_ETERNITE_TOOL = createTag("needs_eternite_tool");
         public static final TagKey<Block> INCORRECT_FOR_AETHERITE_TOOL = createTag("incorrect_for_aetherite_tool");
         public static final TagKey<Block> INCORRECT_FOR_TITANITE_TOOL = createTag("incorrect_for_titanite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ETERNITE_TOOL = createTag("incorrect_for_eternite_tool");
 
 
         private static TagKey<Block> createTag(String name) {
