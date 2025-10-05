@@ -15,7 +15,7 @@ import java.util.Random;
 @Mixin(VillagerEntity.class)
 public class VillagerTradesMixin {
 
-    @Inject(method = "fillRecipes", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "populatesTrades", at = @At("HEAD"), cancellable = true)
     private void injectCustomTrades(Random random, CallbackInfo ci) {
         VillagerEntity villager = (VillagerEntity) (Object) this;
         var profession = villager.getVillagerData().getProfession();
