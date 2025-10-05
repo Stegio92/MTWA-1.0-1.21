@@ -3,6 +3,12 @@ package net.stegio.mtwa;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.passive.VillagerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.village.TradeOffer;
+import net.minecraft.village.TradeOffers;
+import net.minecraft.village.TradedItem;
+import net.minecraft.village.VillagerProfession;
 import net.stegio.mtwa.block.ModBlocks;
 import net.stegio.mtwa.block.entity.ModBlockEntities;
 import net.stegio.mtwa.item.ModItemGroups;
@@ -24,5 +30,5 @@ public class MTWA implements ModInitializer {
         ModWorldGeneration.generateModWorldGen();
         ModBlockEntities.registerBlockEntities();
         ModVillagers.registerVillagers();
-	}
+    }
 }

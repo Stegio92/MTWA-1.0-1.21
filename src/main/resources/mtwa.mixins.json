@@ -3,7 +3,8 @@
 	"package": "net.stegio.mtwa.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+        "VillagerTradesMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
