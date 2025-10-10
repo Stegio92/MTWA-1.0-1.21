@@ -13,6 +13,7 @@ import net.stegio.mtwa.block.ModBlocks;
 import net.stegio.mtwa.block.entity.ModBlockEntities;
 import net.stegio.mtwa.item.ModItemGroups;
 import net.stegio.mtwa.item.ModItems;
+import net.stegio.mtwa.util.ModLootTableModifiers;
 import net.stegio.mtwa.villager.ModVillagers;
 import net.stegio.mtwa.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
@@ -30,5 +31,6 @@ public class MTWA implements ModInitializer {
         ModWorldGeneration.generateModWorldGen();
         ModBlockEntities.registerBlockEntities();
         ModVillagers.registerVillagers();
+        ModLootTableModifiers.modifyLootTables();
     }
 }

@@ -24,6 +24,22 @@
     {
       "id": "mtwa:mtoolsmith_poi",
       "required": false
+    },
+    {
+      "id": "mtwa:larmorer_poi",
+      "required": false
+    },
+    {
+      "id": "mtwa:lweaponsmith_poi",
+      "required": false
+    },
+    {
+      "id": "mtwa:ltoolsmith_poi",
+      "required": false
+    },
+    {
+      "id": "mtwa:enchanter_poi",
+      "required": false
     }
   ]
 }

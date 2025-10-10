@@ -244,5 +244,6 @@
   "entity.minecraft.villager.master_toolsmith": "Master Toolsmith",
   "entity.minecraft.villager.legendary_armorer": "Legendary Armorer",
   "entity.minecraft.villager.legendary_weaponsmith": "Legendary Weaponsmith",
-  "entity.minecraft.villager.legendary_toolsmith": "Legendary Toolsmith"
+  "entity.minecraft.villager.legendary_toolsmith": "Legendary Toolsmith",
+  "entity.minecraft.villager.enchanter": "Enchanter"
 }
