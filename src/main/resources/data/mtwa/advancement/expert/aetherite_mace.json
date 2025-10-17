@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:expert/aetherite_core",
+  "criteria": {
+    "aetherite_mace": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_mace"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain an Aetherite Mace",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:aetherite_mace"
+    },
+    "title": "An unknown Weapon"
+  },
+  "requirements": [
+    [
+      "aetherite_mace"
+    ]
+  ],
+  "rewards": {
+    "experience": 250
+  },
+  "sends_telemetry_event": true
+}

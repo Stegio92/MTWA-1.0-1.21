@@ -1,0 +1,44 @@
+{
+  "parent": "mtwa:legend/eternite_tools",
+  "criteria": {
+    "eternite_tools": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:eternite_axe5"
+          },
+          {
+            "items": "mtwa:eternite_pickaxe5"
+          },
+          {
+            "items": "mtwa:eternite_shovel5"
+          },
+          {
+            "items": "mtwa:eternite_hoe5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a fully upgraded set of Eternite Tools",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:eternite_axe5"
+    },
+    "title": "Forged in the Void"
+  },
+  "requirements": [
+    [
+      "eternite_tools"
+    ]
+  ],
+  "rewards": {
+    "experience": 250
+  },
+  "sends_telemetry_event": true
+}

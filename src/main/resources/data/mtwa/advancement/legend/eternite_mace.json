@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:legend/eternite_core",
+  "criteria": {
+    "eternite_mace": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:eternite_mace"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a Eternite Mace",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:eternite_mace"
+    },
+    "title": "All-Destroying-Punch"
+  },
+  "requirements": [
+    [
+      "eternite_mace"
+    ]
+  ],
+  "rewards": {
+    "experience": 250
+  },
+  "sends_telemetry_event": true
+}

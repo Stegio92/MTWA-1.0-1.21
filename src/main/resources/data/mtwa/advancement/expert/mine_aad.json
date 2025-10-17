@@ -1,0 +1,32 @@
+{
+  "parent": "mtwa:expert/root",
+  "criteria": {
+    "mine_aad": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:ancient_aetherite_debris1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Mine an Ancient Aetherite Debris",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:ancient_aetherite_debris1"
+    },
+    "title": "The first step to greatness"
+  },
+  "requirements": [
+    [
+      "mine_aad"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

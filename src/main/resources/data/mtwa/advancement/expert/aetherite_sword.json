@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:expert/craft_aetherite_ingot",
+  "criteria": {
+    "aetherite_katana": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_katana1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain an Aetherite Katana",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:aetherite_katana1"
+    },
+    "title": "New found Strength"
+  },
+  "requirements": [
+    [
+      "aetherite_katana"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

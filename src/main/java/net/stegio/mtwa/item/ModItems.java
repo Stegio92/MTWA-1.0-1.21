@@ -22,6 +22,7 @@ public class ModItems {
     public static final Item GOLDEN_RYO = registerItem("golden_ryo", new Item(new Item.Settings()));
     public static final Item GOLDEN_RYO_BUNDLE = registerItem("golden_ryo_bundle", new Item(new Item.Settings()));
 
+
     public static final Item AETHERITE_SCRAP = registerItem("aetherite_scrap", new RarityItem(new Item.Settings(), ModRarity.LEGENDARY));
     public static final Item TITANITE_SCRAP = registerItem("titanite_scrap", new RarityItem(new Item.Settings(), ModRarity.MYTHIC));
     public static final Item ETERNITE_SCRAP = registerItem("eternite_scrap", new RarityItem(new Item.Settings(), ModRarity.DIVINE));
@@ -92,7 +93,7 @@ public class ModItems {
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.AETHERITE5,6,-2.4f)), ModRarity.LEGENDARY));
 
 
-    public static final Item AETHERITE_AXE = registerItem("aetherite_axe",
+    public static final Item AETHERITE_AXE = registerItem("aetherite_axe1",
             new RarityAxeItem(ModToolMaterials.AETHERITE, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.AETHERITE,8, -3.0f)), ModRarity.LEGENDARY));
     public static final Item AETHERITE_AXE2 = registerItem("aetherite_axe2",
@@ -108,7 +109,7 @@ public class ModItems {
             new RarityAxeItem(ModToolMaterials.AETHERITE5, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.AETHERITE5,8,-3.0f)), ModRarity.LEGENDARY));
 
-    public static final Item AETHERITE_PICKAXE = registerItem("aetherite_pickaxe",
+    public static final Item AETHERITE_PICKAXE = registerItem("aetherite_pickaxe1",
             new RarityPickaxeItem(ModToolMaterials.AETHERITE, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.AETHERITE,3, -3.0f)), ModRarity.LEGENDARY));
     public static final Item AETHERITE_PICKAXE2 = registerItem("aetherite_pickaxe2",
@@ -124,7 +125,7 @@ public class ModItems {
             new RarityPickaxeItem(ModToolMaterials.AETHERITE5, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.AETHERITE5,3, -3.0f)), ModRarity.LEGENDARY));
 
-    public static final Item AETHERITE_SHOVEL = registerItem("aetherite_shovel",
+    public static final Item AETHERITE_SHOVEL = registerItem("aetherite_shovel1",
             new RarityShovelItem(ModToolMaterials.AETHERITE, new Item.Settings()
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.AETHERITE,2, -3.0f)), ModRarity.LEGENDARY));
     public static final Item AETHERITE_SHOVEL2 = registerItem("aetherite_shovel2",
@@ -140,7 +141,7 @@ public class ModItems {
             new RarityShovelItem(ModToolMaterials.AETHERITE5, new Item.Settings()
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.AETHERITE5,2, -3.0f)), ModRarity.LEGENDARY));
 
-    public static final Item AETHERITE_HOE = registerItem("aetherite_hoe",
+    public static final Item AETHERITE_HOE = registerItem("aetherite_hoe1",
             new RarityHoeItem(ModToolMaterials.AETHERITE, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.AETHERITE,3, -2.8f)), ModRarity.LEGENDARY));
     public static final Item AETHERITE_HOE2 = registerItem("aetherite_hoe2",
@@ -249,7 +250,7 @@ public class ModItems {
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.TITANITE5,6, -2.2f)), ModRarity.MYTHIC));
 
 
-    public static final Item TITANITE_AXE = registerItem("titanite_axe",
+    public static final Item TITANITE_AXE = registerItem("titanite_axe1",
             new RarityAxeItem(ModToolMaterials.TITANITE, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.TITANITE,8, -2.8f)), ModRarity.MYTHIC));
     public static final Item TITANITE_AXE2 = registerItem("titanite_axe2",
@@ -265,7 +266,7 @@ public class ModItems {
             new RarityAxeItem(ModToolMaterials.TITANITE5, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.TITANITE5,8, -2.8f)), ModRarity.MYTHIC));
 
-    public static final Item TITANITE_PICKAXE = registerItem("titanite_pickaxe",
+    public static final Item TITANITE_PICKAXE = registerItem("titanite_pickaxe1",
             new RarityPickaxeItem(ModToolMaterials.TITANITE, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.TITANITE,3, -2.8f)), ModRarity.MYTHIC));
     public static final Item TITANITE_PICKAXE2 = registerItem("titanite_pickaxe2",
@@ -281,7 +282,7 @@ public class ModItems {
             new RarityPickaxeItem(ModToolMaterials.TITANITE5, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.TITANITE5,3, -2.8f)), ModRarity.MYTHIC));
 
-    public static final Item TITANITE_SHOVEL = registerItem("titanite_shovel",
+    public static final Item TITANITE_SHOVEL = registerItem("titanite_shovel1",
             new RarityShovelItem(ModToolMaterials.TITANITE, new Item.Settings()
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.TITANITE,2, -2.8f)), ModRarity.MYTHIC));
     public static final Item TITANITE_SHOVEL2 = registerItem("titanite_shovel2",
@@ -297,7 +298,7 @@ public class ModItems {
             new RarityShovelItem(ModToolMaterials.TITANITE5, new Item.Settings()
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.TITANITE5,2, -2.8f)), ModRarity.MYTHIC));
 
-    public static final Item TITANITE_HOE = registerItem("titanite_hoe",
+    public static final Item TITANITE_HOE = registerItem("titanite_hoe1",
             new RarityHoeItem(ModToolMaterials.TITANITE, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.TITANITE,3, -2.6f)), ModRarity.MYTHIC));
     public static final Item TITANITE_HOE2 = registerItem("titanite_hoe2",

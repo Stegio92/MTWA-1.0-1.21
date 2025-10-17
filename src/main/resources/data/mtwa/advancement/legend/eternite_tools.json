@@ -1,0 +1,44 @@
+{
+  "parent": "mtwa:legend/craft_eternite_ingot",
+  "criteria": {
+    "eternite_tools": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:eternite_axe1"
+          },
+          {
+            "items": "mtwa:eternite_pickaxe1"
+          },
+          {
+            "items": "mtwa:eternite_shovel1"
+          },
+          {
+            "items": "mtwa:eternite_hoe1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a full set of Eternite Tools",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:eternite_pickaxe1"
+    },
+    "title": "Dark Tools"
+  },
+  "requirements": [
+    [
+      "eternite_tools"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

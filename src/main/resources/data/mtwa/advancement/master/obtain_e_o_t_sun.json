@@ -1,0 +1,32 @@
+{
+  "parent": "mtwa:master/mine_tad",
+  "criteria": {
+    "obtain_e_o_t_sun": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:essence_of_the_sun"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain an Essence of the Sun",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:essence_of_the_sun"
+    },
+    "title": "A Glimpse of the Sun"
+  },
+  "requirements": [
+    [
+      "obtain_e_o_t_sun"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

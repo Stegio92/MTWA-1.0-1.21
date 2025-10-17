@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "enter_end": {
+      "conditions": {
+        "to": "minecraft:the_end"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "mtwa:textures/block/titanite_block.png",
+    "description": "Almost there!",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:titanite_block"
+    },
+    "show_toast": false,
+    "title": "The Way to become a Master"
+  },
+  "requirements": [
+    [
+      "enter_end"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

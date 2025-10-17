@@ -1,0 +1,32 @@
+{
+  "parent": "mtwa:master/smelt_tad",
+  "criteria": {
+    "craft_titanite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Craft a Titanite Ingot",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:titanite_ingot"
+    },
+    "title": "Master Blacksmith"
+  },
+  "requirements": [
+    [
+      "craft_titanite_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

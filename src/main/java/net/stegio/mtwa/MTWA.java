@@ -1,14 +1,6 @@
 package net.stegio.mtwa;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
-import net.minecraft.entity.passive.VillagerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.village.TradeOffer;
-import net.minecraft.village.TradeOffers;
-import net.minecraft.village.TradedItem;
-import net.minecraft.village.VillagerProfession;
 import net.stegio.mtwa.block.ModBlocks;
 import net.stegio.mtwa.block.entity.ModBlockEntities;
 import net.stegio.mtwa.item.ModItemGroups;
@@ -18,6 +10,7 @@ import net.stegio.mtwa.villager.ModVillagers;
 import net.stegio.mtwa.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.geckolib.GeckoLib;
 
 public class MTWA implements ModInitializer {
 	public static final String MOD_ID = "mtwa";
@@ -32,5 +25,6 @@ public class MTWA implements ModInitializer {
         ModBlockEntities.registerBlockEntities();
         ModVillagers.registerVillagers();
         ModLootTableModifiers.modifyLootTables();
+
     }
 }

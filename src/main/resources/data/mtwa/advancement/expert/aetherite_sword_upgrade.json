@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:expert/aetherite_sword",
+  "criteria": {
+    "aetherite_katana": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_katana5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a fully upgraded Aetherite Katana",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:aetherite_katana5"
+    },
+    "title": "An Expert Swordsmen"
+  },
+  "requirements": [
+    [
+      "aetherite_katana"
+    ]
+  ],
+  "rewards": {
+    "experience": 250
+  },
+  "sends_telemetry_event": true
+}

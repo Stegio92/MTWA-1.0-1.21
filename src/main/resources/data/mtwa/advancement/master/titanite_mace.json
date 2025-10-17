@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:master/titanite_core",
+  "criteria": {
+    "titanite_mace": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_mace"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a Titanite Mace",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:titanite_mace"
+    },
+    "title": "The Suns Might"
+  },
+  "requirements": [
+    [
+      "titanite_mace"
+    ]
+  ],
+  "rewards": {
+    "experience": 250
+  },
+  "sends_telemetry_event": true
+}

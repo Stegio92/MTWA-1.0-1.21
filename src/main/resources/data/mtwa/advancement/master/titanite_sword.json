@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:master/craft_titanite_ingot",
+  "criteria": {
+    "titanite_katana": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_katana1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a Titanite Katana",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:titanite_katana1"
+    },
+    "title": "Hot Blade"
+  },
+  "requirements": [
+    [
+      "titanite_katana"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

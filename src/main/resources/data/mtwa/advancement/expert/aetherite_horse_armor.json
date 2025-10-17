@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:expert/craft_aetherite_ingot",
+  "criteria": {
+    "aetherite_horse_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_horse_armor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain an Aetherite Horse Armor",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:aetherite_horse_armor"
+    },
+    "title": "Leave no one unprotected"
+  },
+  "requirements": [
+    [
+      "aetherite_horse_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

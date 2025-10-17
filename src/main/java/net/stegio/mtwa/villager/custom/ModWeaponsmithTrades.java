@@ -28,17 +28,19 @@ public class ModWeaponsmithTrades {
                 trades.add(new TradeOffer(new TradedItem(Items.EMERALD, 8), new ItemStack(ModItems.SILVER_RYO_BUNDLE), 8, 1, 0));
             }
             case 2 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO), new ItemStack(Items.STONE_SWORD), 2, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO), new ItemStack(Items.STONE_SWORD), 2, 8, 0));
             }
             case 3 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 2), new ItemStack(ModItems.IRON_KATANA), 2, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 2), Optional.of(new TradedItem(Items.IRON_INGOT, 2)),
+                        new ItemStack(ModItems.IRON_KATANA), 2, 30, 0));
             }
             case 4 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.SILVER_RYO, 2), new ItemStack(ModItems.DIAMOND_KATANA), 2, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.SILVER_RYO, 2),  Optional.of(new TradedItem(Items.DIAMOND, 2)),
+                        new ItemStack(ModItems.DIAMOND_KATANA), 2, 50, 0));
             }
             case 5 -> {
                 trades.add(new TradeOffer(new TradedItem(ModItems.SILVER_RYO_BUNDLE, 2), Optional.of(new TradedItem(ModItems.DIAMOND_KATANA)),
-                        new ItemStack(ModItems.NETHERITE_KATANA), 2, 1, 0));
+                        new ItemStack(ModItems.NETHERITE_KATANA), 2, 100, 0));
             }
         }
         return trades;

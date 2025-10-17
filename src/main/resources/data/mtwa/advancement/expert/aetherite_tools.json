@@ -1,0 +1,44 @@
+{
+  "parent": "mtwa:expert/craft_aetherite_ingot",
+  "criteria": {
+    "aetherite_tools": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_axe1"
+          },
+          {
+            "items": "mtwa:aetherite_pickaxe1"
+          },
+          {
+            "items": "mtwa:aetherite_shovel1"
+          },
+          {
+            "items": "mtwa:aetherite_hoe1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a full set of Aetherite Tools",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:aetherite_pickaxe1"
+    },
+    "title": "Unmatched Tools"
+  },
+  "requirements": [
+    [
+      "aetherite_tools"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

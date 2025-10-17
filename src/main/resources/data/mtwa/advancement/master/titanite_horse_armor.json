@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:master/craft_titanite_ingot",
+  "criteria": {
+    "titanite_horse_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_horse_armor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a Titanite Horse Armor",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:titanite_horse_armor"
+    },
+    "title": "Invincible Horse"
+  },
+  "requirements": [
+    [
+      "titanite_horse_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "mtwa:master/mine_tad",
+  "criteria": {
+    "smelt_tad": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_scrap"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a Titanite Scrap by smelting Ancient Titanite Debris",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:titanite_scrap"
+    },
+    "title": "Hotter than the Sun"
+  },
+  "requirements": [
+    [
+      "smelt_tad"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

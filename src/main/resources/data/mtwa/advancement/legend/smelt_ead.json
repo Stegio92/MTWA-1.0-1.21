@@ -1,0 +1,32 @@
+{
+  "parent": "mtwa:legend/mine_ead",
+  "criteria": {
+    "smelt_ead": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:eternite_scrap"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a Eternite Scrap by smelting Ancient Eternite Debris",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:eternite_scrap"
+    },
+    "title": "Darker than the Void"
+  },
+  "requirements": [
+    [
+      "smelt_ead"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

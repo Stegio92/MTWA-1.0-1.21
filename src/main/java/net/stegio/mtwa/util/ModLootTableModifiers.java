@@ -1,12 +1,9 @@
 package net.stegio.mtwa.util;
 
-import net.fabricmc.fabric.api.loot.v3.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.loot.LootPool;
-import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.entry.LootTableEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
@@ -75,6 +72,7 @@ public class ModLootTableModifiers {
                 tablebuilder.pool(poolBuilder2.build());
                 tablebuilder.pool(poolBuilder3.build());
             }
+
 
 
         });

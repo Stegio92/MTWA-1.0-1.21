@@ -16,17 +16,17 @@ public class ModFishermanTrades {
                 trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 3), new ItemStack(Items.COD), 4, 1, 0));
             }
             case 2 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 4), new ItemStack(Items.SALMON), 4, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 4), new ItemStack(Items.SALMON), 4, 2, 0));
             }
             case 3 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 12), new ItemStack(Items.COD, 4), 4, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 12), new ItemStack(Items.COD, 4), 4, 4, 0));
             }
             case 4 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 16), new ItemStack(Items.SALMON, 4), 4, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 16), new ItemStack(Items.SALMON, 4), 4, 5, 0));
             }
             case 5 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 4), new ItemStack(Items.COOKED_COD), 4, 1, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 5), new ItemStack(Items.COOKED_SALMON), 4, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 4), new ItemStack(Items.COOKED_COD), 4, 10, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 5), new ItemStack(Items.COOKED_SALMON), 4, 10, 0));
             }
         }
         return trades;

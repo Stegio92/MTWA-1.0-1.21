@@ -1,0 +1,32 @@
+{
+  "parent": "mtwa:master/root",
+  "criteria": {
+    "mine_tad": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:ancient_titanite_debris1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Mine an Ancient Titanite Debris",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:ancient_titanite_debris1"
+    },
+    "title": "The second step to greatness"
+  },
+  "requirements": [
+    [
+      "mine_tad"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

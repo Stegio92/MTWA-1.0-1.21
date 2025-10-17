@@ -17,6 +17,15 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class ModArmorMaterials {
+    public static final RegistryEntry<ArmorMaterial> STRAW = registerArmorMaterial("straw",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 1);
+                map.put(ArmorItem.Type.LEGGINGS, 1);
+                map.put(ArmorItem.Type.CHESTPLATE, 1);
+                map.put(ArmorItem.Type.HELMET, 1);
+                map.put(ArmorItem.Type.BODY, 3);
+            }), 5, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, () -> Ingredient.ofItems(Items.WHEAT),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(MTWA.MOD_ID, "straw"))), 0f, 0f));
     public static final RegistryEntry<ArmorMaterial> AETHERITE_ARMOR_MATERIAL = registerArmorMaterial("aetherite",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
                 map.put(ArmorItem.Type.BOOTS, 4);

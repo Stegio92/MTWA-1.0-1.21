@@ -1,0 +1,44 @@
+{
+  "parent": "mtwa:master/titanite_armor",
+  "criteria": {
+    "titanite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_helmet5"
+          },
+          {
+            "items": "mtwa:titanite_chestplate5"
+          },
+          {
+            "items": "mtwa:titanite_leggings5"
+          },
+          {
+            "items": "mtwa:titanite_boots5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a fully upgraded set of Titanite Armor",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:titanite_chestplate5"
+    },
+    "title": "Not even the Sun can hurt you"
+  },
+  "requirements": [
+    [
+      "titanite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 250
+  },
+  "sends_telemetry_event": true
+}

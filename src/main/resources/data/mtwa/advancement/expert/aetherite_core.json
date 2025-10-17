@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:expert/craft_aetherite_ingot",
+  "criteria": {
+    "aetherite_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_core1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain an Aetherite Core",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:aetherite_core1"
+    },
+    "title": "The Suns Core"
+  },
+  "requirements": [
+    [
+      "aetherite_core"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

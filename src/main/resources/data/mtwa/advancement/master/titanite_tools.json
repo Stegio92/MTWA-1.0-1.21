@@ -1,0 +1,44 @@
+{
+  "parent": "mtwa:master/craft_titanite_ingot",
+  "criteria": {
+    "titanite_tools": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_axe1"
+          },
+          {
+            "items": "mtwa:titanite_pickaxe1"
+          },
+          {
+            "items": "mtwa:titanite_shovel1"
+          },
+          {
+            "items": "mtwa:titanite_hoe1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a full set of Titanite Tools",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:titanite_pickaxe1"
+    },
+    "title": "Hot Tools"
+  },
+  "requirements": [
+    [
+      "titanite_tools"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

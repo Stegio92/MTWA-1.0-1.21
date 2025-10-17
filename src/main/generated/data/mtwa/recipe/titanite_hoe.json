@@ -4,11 +4,11 @@
     "item": "mtwa:titanite_ingot"
   },
   "base": {
-    "item": "mtwa:aetherite_hoe"
+    "item": "mtwa:aetherite_hoe1"
   },
   "result": {
     "count": 1,
-    "id": "mtwa:titanite_hoe"
+    "id": "mtwa:titanite_hoe1"
   },
   "template": {
     "item": "mtwa:titanite_upgrade_smithing_template"

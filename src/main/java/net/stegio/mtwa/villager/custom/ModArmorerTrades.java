@@ -30,58 +30,58 @@ public class ModArmorerTrades {
             case 2 -> {
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 2), Optional.of(new TradedItem(Items.IRON_INGOT, 2)),
-                        new  ItemStack(Items.CHAINMAIL_HELMET), 2, 1, 0));
+                        new  ItemStack(Items.CHAINMAIL_HELMET), 2, 2, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 4), Optional.of(new TradedItem(Items.IRON_INGOT, 4)),
-                        new  ItemStack(Items.CHAINMAIL_CHESTPLATE), 2, 1, 0));
+                        new  ItemStack(Items.CHAINMAIL_CHESTPLATE), 2, 2, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 3), Optional.of(new TradedItem(Items.IRON_INGOT, 3)),
-                        new  ItemStack(Items.CHAINMAIL_LEGGINGS), 2, 1, 0));
+                        new  ItemStack(Items.CHAINMAIL_LEGGINGS), 2, 2, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 1), Optional.of(new TradedItem(Items.IRON_INGOT, 1)),
-                        new  ItemStack(Items.CHAINMAIL_BOOTS), 2, 1, 0));
+                        new  ItemStack(Items.CHAINMAIL_BOOTS), 2, 2, 0));
             }
             case 3 -> {
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 4), Optional.of(new TradedItem(Items.IRON_INGOT, 4)),
-                        new  ItemStack(Items.IRON_HELMET), 2, 1, 0));
+                        new  ItemStack(Items.IRON_HELMET), 2, 10, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 6), Optional.of(new TradedItem(Items.IRON_INGOT, 6)),
-                        new  ItemStack(Items.IRON_CHESTPLATE), 2, 1, 0));
+                        new  ItemStack(Items.IRON_CHESTPLATE), 2, 10, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 5), Optional.of(new TradedItem(Items.IRON_INGOT, 5)),
-                        new  ItemStack(Items.IRON_LEGGINGS), 2, 1, 0));
+                        new  ItemStack(Items.IRON_LEGGINGS), 2, 10, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 3), Optional.of(new TradedItem(Items.IRON_INGOT, 3)),
-                        new  ItemStack(Items.IRON_BOOTS), 2, 1, 0));
+                        new  ItemStack(Items.IRON_BOOTS), 2, 10, 0));
             }
             case 4 -> {
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO, 4), Optional.of(new TradedItem(Items.DIAMOND, 4)),
-                        new  ItemStack(Items.DIAMOND_HELMET), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_HELMET), 2, 15, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO, 6), Optional.of(new TradedItem(Items.DIAMOND, 6)),
-                        new  ItemStack(Items.DIAMOND_CHESTPLATE), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_CHESTPLATE), 2, 15, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO, 5), Optional.of(new TradedItem(Items.DIAMOND, 5)),
-                        new  ItemStack(Items.DIAMOND_LEGGINGS), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_LEGGINGS), 2, 15, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO, 3), Optional.of(new TradedItem(Items.DIAMOND, 3)),
-                        new  ItemStack(Items.DIAMOND_BOOTS), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_BOOTS), 2, 15, 0));
             }
             case 5 -> {
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 2), Optional.of(new TradedItem(Items.DIAMOND_HELMET)),
-                        new  ItemStack(Items.DIAMOND_HELMET), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_HELMET), 2, 100, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 4), Optional.of(new TradedItem(Items.DIAMOND_CHESTPLATE)),
-                        new  ItemStack(Items.DIAMOND_CHESTPLATE), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_CHESTPLATE), 2, 100, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 3), Optional.of(new TradedItem(Items.DIAMOND_LEGGINGS)),
-                        new  ItemStack(Items.DIAMOND_LEGGINGS), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_LEGGINGS), 2, 100, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 1), Optional.of(new TradedItem(Items.DIAMOND_BOOTS)),
-                        new  ItemStack(Items.DIAMOND_BOOTS), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_BOOTS), 2, 100, 0));
             }
         }
         return trades;

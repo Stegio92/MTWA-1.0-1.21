@@ -1,0 +1,32 @@
+{
+  "parent": "mtwa:expert/smelt_aad",
+  "criteria": {
+    "craft_aetherite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Craft an Aetherite Ingot",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:aetherite_ingot"
+    },
+    "title": "Expert Blacksmith"
+  },
+  "requirements": [
+    [
+      "craft_aetherite_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

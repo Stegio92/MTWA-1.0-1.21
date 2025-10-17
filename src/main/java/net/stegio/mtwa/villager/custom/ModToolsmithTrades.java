@@ -30,58 +30,58 @@ public class ModToolsmithTrades {
             case 2 -> {
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 4),
-                        new  ItemStack(Items.STONE_AXE), 2, 1, 0));
+                        new  ItemStack(Items.STONE_AXE), 2, 2, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 3),
-                        new  ItemStack(Items.STONE_PICKAXE), 2, 1, 0));
+                        new  ItemStack(Items.STONE_PICKAXE), 2, 2, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 2),
-                        new  ItemStack(Items.STONE_SHOVEL), 2, 1, 0));
+                        new  ItemStack(Items.STONE_SHOVEL), 2, 2, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 1),
-                        new  ItemStack(Items.STONE_HOE), 2, 1, 0));
+                        new  ItemStack(Items.STONE_HOE), 2, 2, 0));
             }
             case 3 -> {
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 4), Optional.of(new TradedItem(Items.IRON_INGOT, 2)),
-                        new  ItemStack(Items.IRON_AXE), 2, 1, 0));
+                        new  ItemStack(Items.IRON_AXE), 2, 10, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 3), Optional.of(new TradedItem(Items.IRON_INGOT, 2)),
-                        new  ItemStack(Items.IRON_PICKAXE), 2, 1, 0));
+                        new  ItemStack(Items.IRON_PICKAXE), 2, 10, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 2), Optional.of(new TradedItem(Items.IRON_INGOT, 2)),
-                        new  ItemStack(Items.IRON_SHOVEL), 2, 1, 0));
+                        new  ItemStack(Items.IRON_SHOVEL), 2, 10, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.BRONZE_RYO, 1), Optional.of(new TradedItem(Items.IRON_INGOT, 1)),
-                        new  ItemStack(Items.IRON_HOE), 2, 1, 0));
+                        new  ItemStack(Items.IRON_HOE), 2, 10, 0));
             }
             case 4 -> {
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO, 4), Optional.of(new TradedItem(Items.DIAMOND, 2)),
-                        new  ItemStack(Items.DIAMOND_AXE), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_AXE), 2, 15, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO, 3), Optional.of(new TradedItem(Items.DIAMOND, 2)),
-                        new  ItemStack(Items.DIAMOND_PICKAXE), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_PICKAXE), 2, 15, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO, 2), Optional.of(new TradedItem(Items.DIAMOND, 2)),
-                        new  ItemStack(Items.DIAMOND_SHOVEL), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_SHOVEL), 2, 15, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO, 1), Optional.of(new TradedItem(Items.DIAMOND, 1)),
-                        new  ItemStack(Items.DIAMOND_HOE), 2, 1, 0));
+                        new  ItemStack(Items.DIAMOND_HOE), 2, 15, 0));
             }
             case 5 -> {
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 4), Optional.of(new TradedItem(Items.DIAMOND_AXE)),
-                        new  ItemStack(Items.NETHERITE_AXE), 2, 1, 0));
+                        new  ItemStack(Items.NETHERITE_AXE), 2, 100, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 3), Optional.of(new TradedItem(Items.DIAMOND_PICKAXE)),
-                        new  ItemStack(Items.NETHERITE_PICKAXE), 2, 1, 0));
+                        new  ItemStack(Items.NETHERITE_PICKAXE), 2, 100, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 2), Optional.of(new TradedItem(Items.DIAMOND_SHOVEL)),
-                        new  ItemStack(Items.NETHERITE_SHOVEL), 2, 1, 0));
+                        new  ItemStack(Items.NETHERITE_SHOVEL), 2, 100, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 1), Optional.of(new TradedItem(Items.DIAMOND_HOE)),
-                        new  ItemStack(Items.NETHERITE_HOE), 2, 1, 0));
+                        new  ItemStack(Items.NETHERITE_HOE), 2, 100, 0));
             }
         }
         return trades;

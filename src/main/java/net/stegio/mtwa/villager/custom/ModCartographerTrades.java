@@ -27,13 +27,13 @@ public class ModCartographerTrades {
                 trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 1), new ItemStack(Items.FILLED_MAP, 1), 2, 2, 0));
             }
             case 3 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 1), new ItemStack(Items.FILLED_MAP, 1), 4, 2, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 1), new ItemStack(Items.FILLED_MAP, 1), 4, 10, 0));
             }
             case 4 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 1), new ItemStack(Items.FILLED_MAP, 1), 6, 2, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 1), new ItemStack(Items.FILLED_MAP, 1), 6, 15, 0));
             }
             case 5 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE, 1), new ItemStack(Items.WHITE_BANNER),  2, 2, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE, 1), new ItemStack(Items.WHITE_BANNER),  2, 100, 0));
             }
         }
         return trades;

@@ -1,0 +1,44 @@
+{
+  "parent": "mtwa:master/titanite_tools",
+  "criteria": {
+    "titanite_tools": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_axe5"
+          },
+          {
+            "items": "mtwa:titanite_pickaxe5"
+          },
+          {
+            "items": "mtwa:titanite_shovel5"
+          },
+          {
+            "items": "mtwa:titanite_hoe5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a fully upgraded set of Titanite Tools",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:titanite_axe5"
+    },
+    "title": "Forged in Hell"
+  },
+  "requirements": [
+    [
+      "titanite_tools"
+    ]
+  ],
+  "rewards": {
+    "experience": 250
+  },
+  "sends_telemetry_event": true
+}

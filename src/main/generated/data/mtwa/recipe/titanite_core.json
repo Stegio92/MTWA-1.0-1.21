@@ -1,21 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "#": {
-      "item": "mtwa:aetherite_core1"
-    },
-    "T": {
-      "item": "mtwa:titanite_ingot"
-    }
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mtwa:titanite_ingot"
   },
-  "pattern": [
-    "TTT",
-    "T#T",
-    "TTT"
-  ],
+  "base": {
+    "item": "mtwa:aetherite_core1"
+  },
   "result": {
     "count": 1,
     "id": "mtwa:titanite_core"
+  },
+  "template": {
+    "item": "mtwa:titanite_upgrade_smithing_template5"
   }
 }

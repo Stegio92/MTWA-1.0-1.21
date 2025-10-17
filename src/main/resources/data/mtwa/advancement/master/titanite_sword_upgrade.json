@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:master/titanite_sword",
+  "criteria": {
+    "titanite_katana": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_katana5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a fully upgraded Titanite Katana",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:titanite_katana5"
+    },
+    "title": "Sun Slicer"
+  },
+  "requirements": [
+    [
+      "titanite_katana"
+    ]
+  ],
+  "rewards": {
+    "experience": 250
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:legend/eternite_sword",
+  "criteria": {
+    "eternite_katana": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:eternite_katana5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a fully upgraded Eternite Katana",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:eternite_katana5"
+    },
+    "title": "Universe Slicer"
+  },
+  "requirements": [
+    [
+      "eternite_katana"
+    ]
+  ],
+  "rewards": {
+    "experience": 250
+  },
+  "sends_telemetry_event": true
+}

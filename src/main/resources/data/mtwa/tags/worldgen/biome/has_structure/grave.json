@@ -2,15 +2,32 @@
   "replace": false,
 
   "values": [
-    "#minecraft:is_jungle",
+    "minecraft:cherry_grove",
+    "minecraft:grove",
+    "#minecraft:is_hill",
+    "minecraft:windswept_forest",
     "#minecraft:is_forest",
     "#minecraft:is_taiga",
-    "#minecraft:is_mountain",
-    "#minecraft:is_hill",
+    "#minecraft:is_jungle",
     "minecraft:swamp",
-    "minecraft:snowy_taiga",
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:snowy_plains",
+
     {
-      "id": "#c:is_jungle",
+      "id": "#c:is_cherry_grove",
+      "required": false
+    },
+    {
+      "id": "#c:is_grove",
+      "required": false
+    },
+    {
+      "id": "#c:is_hill",
+      "required": false
+    },
+    {
+      "id": "#c:is_windswept_forest",
       "required": false
     },
     {
@@ -22,11 +39,7 @@
       "required": false
     },
     {
-      "id": "#c:is_mountain",
-      "required": false
-    },
-    {
-      "id": "#c:is_hill",
+      "id": "#c:is_jungle",
       "required": false
     },
     {
@@ -34,7 +47,15 @@
       "required": false
     },
     {
-      "id": "#c:is_snowy_taiga",
+      "id": "#c:is_plains",
+      "required": false
+    },
+    {
+      "id": "#c:is_sunflower_plains",
+      "required": false
+    },
+    {
+      "id": "#c:is_snowy_plains",
       "required": false
     }
   ]

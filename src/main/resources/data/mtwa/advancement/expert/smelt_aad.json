@@ -1,0 +1,32 @@
+{
+  "parent": "mtwa:expert/mine_aad",
+  "criteria": {
+    "smelt_aad": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_scrap"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain an Aetherite Scrap by smelting Ancient Aetherite Debris",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:aetherite_scrap"
+    },
+    "title": "A Million Degrees"
+  },
+  "requirements": [
+    [
+      "smelt_aad"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

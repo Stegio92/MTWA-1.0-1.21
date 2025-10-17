@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:item", "name": "mtwa:iron_katana", "weight": 1000},
+        {"type": "minecraft:item", "name": "mtwa:diamond_katana", "weight": 500},
+        {"type": "minecraft:item", "name": "mtwa:netherite_katana", "weight": 250},
+        {"type": "minecraft:item", "name": "mtwa:aetherite_katana1", "weight": 100},
+        {"type": "minecraft:item", "name": "mtwa:aetherite_katana2", "weight": 95},
+        {"type": "minecraft:item", "name": "mtwa:aetherite_katana3", "weight": 90},
+        {"type": "minecraft:item", "name": "mtwa:aetherite_katana4", "weight": 85},
+        {"type": "minecraft:item", "name": "mtwa:aetherite_katana5", "weight": 80},
+        {"type": "minecraft:item", "name": "mtwa:titanite_katana1", "weight": 50},
+        {"type": "minecraft:item", "name": "mtwa:titanite_katana2", "weight": 45},
+        {"type": "minecraft:item", "name": "mtwa:titanite_katana3", "weight": 40},
+        {"type": "minecraft:item", "name": "mtwa:titanite_katana4", "weight": 35},
+        {"type": "minecraft:item", "name": "mtwa:titanite_katana5", "weight": 30},
+        {"type": "minecraft:item", "name": "mtwa:eternite_katana1", "weight": 15},
+        {"type": "minecraft:item", "name": "mtwa:eternite_katana2", "weight": 10},
+        {"type": "minecraft:item", "name": "mtwa:eternite_katana3", "weight": 5},
+        {"type": "minecraft:item", "name": "mtwa:eternite_katana4", "weight": 3},
+        {"type": "minecraft:item", "name": "mtwa:eternite_katana5", "weight": 1}
+      ]
+    },
+    {
+      "rolls": { "min": 2, "max": 3},
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mtwa:essence_of_the_sky",
+          "weight": 65,
+          "functions": [{"function": "minecraft:set_count", "count": {"min": 0, "max": 2}}],
+          "conditions": [{"condition": "minecraft:random_chance", "chance": 0.2}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mtwa:essence_of_the_sun",
+          "weight": 25,
+          "functions": [{"function": "minecraft:set_count", "count": {"min": 0, "max": 1}}],
+          "conditions": [{"condition": "minecraft:random_chance", "chance": 0.15}]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mtwa:essence_of_the_universe",
+          "weight": 10,
+          "functions": [{"function": "minecraft:set_count", "count": {"min": 1, "max": 1}}],
+          "conditions": [{"condition": "minecraft:random_chance", "chance": 0.1}]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "mtwa:chests/grave"
+}

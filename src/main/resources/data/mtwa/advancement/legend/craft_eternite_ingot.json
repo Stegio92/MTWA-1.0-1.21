@@ -1,0 +1,32 @@
+{
+  "parent": "mtwa:legend/smelt_ead",
+  "criteria": {
+    "craft_eternite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:eternite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Craft a Eternite Ingot",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:eternite_ingot"
+    },
+    "title": "Legend Blacksmith"
+  },
+  "requirements": [
+    [
+      "craft_eternite_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

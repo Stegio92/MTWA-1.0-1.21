@@ -1,0 +1,44 @@
+{
+  "parent": "mtwa:expert/craft_aetherite_ingot",
+  "criteria": {
+    "aetherite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_helmet1"
+          },
+          {
+            "items": "mtwa:aetherite_chestplate1"
+          },
+          {
+            "items": "mtwa:aetherite_leggings1"
+          },
+          {
+            "items": "mtwa:aetherite_boots1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a full set of Aetherite Armor",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:aetherite_helmet1"
+    },
+    "title": "Shiny Debris"
+  },
+  "requirements": [
+    [
+      "aetherite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "enter_end": {
+      "conditions": {
+        "to": "minecraft:the_end"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "mtwa:textures/block/aetherite_block.png",
+    "description": "Prepare yourself for even greater strength",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:aetherite_block"
+    },
+    "show_toast": false,
+    "title": "A True Expert"
+  },
+  "requirements": [
+    [
+      "enter_end"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,44 @@
+{
+  "parent": "mtwa:expert/aetherite_tools",
+  "criteria": {
+    "aetherite_tools": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:aetherite_axe5"
+          },
+          {
+            "items": "mtwa:aetherite_pickaxe5"
+          },
+          {
+            "items": "mtwa:aetherite_shovel5"
+          },
+          {
+            "items": "mtwa:aetherite_hoe5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a fully upgraded set of Aetherite Tools",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:aetherite_axe5"
+    },
+    "title": "The Sky is underneath your Feet"
+  },
+  "requirements": [
+    [
+      "aetherite_tools"
+    ]
+  ],
+  "rewards": {
+    "experience": 250
+  },
+  "sends_telemetry_event": true
+}

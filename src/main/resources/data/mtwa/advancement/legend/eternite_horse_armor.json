@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:legend/craft_eternite_ingot",
+  "criteria": {
+    "eternite_horse_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:eternite_horse_armor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a Eternite Horse Armor",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:eternite_horse_armor"
+    },
+    "title": "God-Horse"
+  },
+  "requirements": [
+    [
+      "eternite_horse_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

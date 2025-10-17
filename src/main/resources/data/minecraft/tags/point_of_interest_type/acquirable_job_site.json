@@ -38,6 +38,10 @@
       "required": false
     },
     {
+      "id": "mtwa:merchant_poi",
+      "required": false
+    },
+    {
       "id": "mtwa:enchanter_poi",
       "required": false
     }

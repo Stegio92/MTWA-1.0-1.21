@@ -1,0 +1,44 @@
+{
+  "parent": "mtwa:legend/eternite_armor",
+  "criteria": {
+    "eternite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:eternite_helmet5"
+          },
+          {
+            "items": "mtwa:eternite_chestplate5"
+          },
+          {
+            "items": "mtwa:eternite_leggings5"
+          },
+          {
+            "items": "mtwa:eternite_boots5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a fully upgraded set of Eternite Armor",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:eternite_chestplate5"
+    },
+    "title": "Godlike"
+  },
+  "requirements": [
+    [
+      "eternite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 250
+  },
+  "sends_telemetry_event": true
+}

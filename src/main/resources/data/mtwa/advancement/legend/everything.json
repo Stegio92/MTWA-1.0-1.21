@@ -1,0 +1,59 @@
+{
+  "parent": "mtwa:legend/eternite_armor_upgrade",
+  "criteria": {
+    "eternite_everything": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:eternite_helmet5"
+          },
+          {
+            "items": "mtwa:eternite_chestplate5"
+          },
+          {
+            "items": "mtwa:eternite_leggings5"
+          },
+          {
+            "items": "mtwa:eternite_boots5"
+          },
+          {
+            "items": "mtwa:eternite_axe5"
+          },
+          {
+            "items": "mtwa:eternite_pickaxe5"
+          },
+          {
+            "items": "mtwa:eternite_shovel5"
+          },
+          {
+            "items": "mtwa:eternite_hoe5"
+          },
+          {
+            "items": "mtwa:eternite_katana5"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a fully upgraded set of Eternite Armor and Tools and a fully upgraded Eternite Katana",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:eternite_katana5"
+    },
+    "title": "Invincible under the Sun"
+  },
+  "requirements": [
+    [
+      "eternite_everything"
+    ]
+  ],
+  "rewards": {
+    "experience": 1000
+  },
+  "sends_telemetry_event": true
+}

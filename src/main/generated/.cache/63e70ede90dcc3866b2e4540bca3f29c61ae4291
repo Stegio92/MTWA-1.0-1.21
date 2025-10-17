@@ -1,8 +1,8 @@
-// 1.21	2025-10-10T18:06:13.7582856	MTWA/Tags for minecraft:item
-93760aa9c01c35e5c61a0fdc9fe0ef1b003381bf data\minecraft\tags\item\hoes.json
+// 1.21	2025-10-16T20:41:30.5715752	MTWA/Tags for minecraft:item
+8e1853713abc944bf81b41d2ffa2500c44c8f3f1 data\minecraft\tags\item\hoes.json
 1aea2c34d6ebf6e371a6f9f811f7a7be26c2f854 data\minecraft\tags\item\swords.json
-8af41eade7193664400cf98e763cafa02677d935 data\minecraft\tags\item\shovels.json
-1999935540d251a4b33ccaf4d4e1425f651928d4 data\minecraft\tags\item\axes.json
-27358e0691140c55b8a515a9c07cdfc706652d0c data\minecraft\tags\item\pickaxes.json
+5d492b0beddc2e1a5a193a168f5dce9143708952 data\minecraft\tags\item\shovels.json
+91ba46138c84d2c553ee352e35668ba5c21d75b8 data\minecraft\tags\item\axes.json
+988c1162c5be4b75919592d886ef0b75c036290e data\minecraft\tags\item\pickaxes.json
 bad05ad885d411ca57bb740b50c56f1299b7051c data\minecraft\tags\item\trimmable_armor.json
 6ebf996eddf947624ff997e33420d6991130c6d9 data\minecraft\tags\item\enchantable\mace.json

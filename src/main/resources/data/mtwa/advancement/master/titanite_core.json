@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:master/craft_titanite_ingot",
+  "criteria": {
+    "titanite_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:titanite_core"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a Titanite Core",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:titanite_core"
+    },
+    "title": "The Suns Core"
+  },
+  "requirements": [
+    [
+      "titanite_core"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

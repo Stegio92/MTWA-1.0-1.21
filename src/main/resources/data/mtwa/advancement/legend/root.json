@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "enter_end": {
+      "conditions": {
+        "to": "minecraft:the_end"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "mtwa:textures/block/eternite_block.png",
+    "description": "Become a God!",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:eternite_block"
+    },
+    "show_toast": false,
+    "title": "A Legends Path"
+  },
+  "requirements": [
+    [
+      "enter_end"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

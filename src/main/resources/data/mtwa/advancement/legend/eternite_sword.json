@@ -1,0 +1,35 @@
+{
+  "parent": "mtwa:legend/craft_eternite_ingot",
+  "criteria": {
+    "eternite_katana": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:eternite_katana1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "show_toast": true,
+    "description": "Obtain a Eternite Katana",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mtwa:eternite_katana1"
+    },
+    "title": "Dark Blade"
+  },
+  "requirements": [
+    [
+      "eternite_katana"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

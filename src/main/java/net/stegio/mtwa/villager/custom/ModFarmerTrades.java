@@ -20,13 +20,13 @@ public class ModFarmerTrades {
                 trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 3), new ItemStack(Items.BREAD, 1), 12, 1, 0));
             }
             case 3 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.SILVER_RYO, 3), new ItemStack(Items.GOLDEN_CARROT, 3), 10, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.SILVER_RYO, 3), new ItemStack(Items.GOLDEN_CARROT, 3), 10, 4, 0));
             }
             case 4 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.SILVER_RYO_BUNDLE), new ItemStack(Items.GOLDEN_APPLE), 4, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.SILVER_RYO_BUNDLE), new ItemStack(Items.GOLDEN_APPLE), 4, 5, 0));
             }
             case 5 -> {
-                trades.add(new TradeOffer(new TradedItem(ModItems.SILVER_RYO_BUNDLE), new ItemStack(Items.ENCHANTED_GOLDEN_APPLE), 1, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE), new ItemStack(Items.ENCHANTED_GOLDEN_APPLE), 1, 1, 0));
             }
         }
         return trades;

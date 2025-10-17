@@ -29,6 +29,8 @@ public class ModVillagers {
     public static final RegistryKey<PointOfInterestType> LWEAPONSMITH_POI_KEY = registerPoiKey("lweaponsmith_poi");
     public static final RegistryKey<PointOfInterestType> LTOOLSMITH_POI_KEY = registerPoiKey("ltoolsmith_poi");
 
+    public static final RegistryKey<PointOfInterestType> MERCHANT_POI_KEY = registerPoiKey("merchant_poi");
+
     public static final RegistryKey<PointOfInterestType> ENCHANTER_POI_KEY = registerPoiKey("enchanter_poi");
 
     public static final PointOfInterestType EARMOR_POI = registerPOI("earmorer_poi", ModBlocks.AETHERITE_ARMOR_ANVIL);
@@ -43,6 +45,8 @@ public class ModVillagers {
     public static final PointOfInterestType LWEAPONSMITH_POI = registerPOI("lweaponsmith_poi", ModBlocks.ETERNITE_WEAPON_ANVIL);
     public static final PointOfInterestType LTOOLSMITH_POI = registerPOI("ltoolsmith_poi", ModBlocks.ETERNITE_TOOL_ANVIL);
 
+    public static final PointOfInterestType MERCHANT_POI = registerPOI("merchant_poi", Blocks.CRAFTING_TABLE);
+
     public static final PointOfInterestType ENCHANTER_POI = registerPOI("enchanter_poi", Blocks.ENCHANTING_TABLE);
 
     public static final VillagerProfession EXPERT_ARMORER = registerProfession("expert_armorer", EARMORER_POI_KEY);
@@ -56,6 +60,8 @@ public class ModVillagers {
     public static final VillagerProfession LEGENDARY_ARMORER = registerProfession("legendary_armorer", LARMORER_POI_KEY);
     public static final VillagerProfession LEGENDARY_WEAPONSMITH = registerProfession("legendary_weaponsmith", LWEAPONSMITH_POI_KEY);
     public static final VillagerProfession LEGENDARY_TOOLSMITH = registerProfession("legendary_toolsmith", LTOOLSMITH_POI_KEY);
+
+    public static final VillagerProfession MERCHANT = registerProfession("merchant", MERCHANT_POI_KEY);
 
     public static final VillagerProfession ENCHANTER = registerProfession("enchanter", ENCHANTER_POI_KEY);
 
