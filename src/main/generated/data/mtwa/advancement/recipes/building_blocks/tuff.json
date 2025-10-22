@@ -1,11 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_aetherite_mace": {
+    "has_cobbled_deepslate": {
       "conditions": {
         "items": [
           {
-            "items": "mtwa:aetherite_mace"
+            "items": "minecraft:cobbled_deepslate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cobblestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:cobblestone"
           }
         ]
       },
@@ -13,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mtwa:aetherite_core1"
+        "recipe": "minecraft:tuff"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_aetherite_mace"
+      "has_cobblestone",
+      "has_cobbled_deepslate"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mtwa:aetherite_core1"
+      "minecraft:tuff"
     ]
   }
 }

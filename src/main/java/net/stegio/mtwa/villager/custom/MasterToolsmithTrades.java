@@ -16,11 +16,13 @@ public class MasterToolsmithTrades {
         switch (level) {
             case 1 -> {
                 trades.add(new TradeOffer(new TradedItem(ModItems.TITANITE_INGOT, 1),
-                        new ItemStack(ModItems.GOLDEN_RYO_BUNDLE, 5), 8, 1, 0));
+                        new ItemStack(ModItems.GOLDEN_RYO_BUNDLE, 8), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 10),
                         new ItemStack(ModItems.TITANITE_INGOT, 1), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(ModItems.TITANITE_SCRAP),
-                        new ItemStack(ModItems.GOLDEN_RYO, 2), 8, 1, 0));
+                        new ItemStack(ModItems.GOLDEN_RYO, 4), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.ESSENCE_OF_THE_SUN),
+                        new ItemStack(ModItems.GOLDEN_RYO, 4), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 25), Optional.of(new TradedItem(ModItems.AETHERITE_AXE5)),
                         new ItemStack(ModItems.TITANITE_AXE, 1), 1, 2, 0));
                 trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 24), Optional.of(new TradedItem(ModItems.AETHERITE_PICKAXE5)),

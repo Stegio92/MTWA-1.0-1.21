@@ -23,8 +23,8 @@ public class ModWeaponsmithTrades {
                 trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE), new ItemStack(Items.GOLD_INGOT, 8), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(Items.DIAMOND, 8), new ItemStack(ModItems.SILVER_RYO_BUNDLE), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(ModItems.SILVER_RYO_BUNDLE), new ItemStack(Items.DIAMOND, 6), 8, 1, 0));
-                trades.add(new TradeOffer(new TradedItem(Items.NETHERITE_INGOT, 2), new ItemStack(ModItems.GOLDEN_RYO), 8, 1, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO), new ItemStack(Items.NETHERITE_INGOT), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(Items.NETHERITE_INGOT), new ItemStack(ModItems.GOLDEN_RYO, 4), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO, 6), new ItemStack(Items.NETHERITE_INGOT), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(Items.EMERALD, 8), new ItemStack(ModItems.SILVER_RYO_BUNDLE), 8, 1, 0));
             }
             case 2 -> {

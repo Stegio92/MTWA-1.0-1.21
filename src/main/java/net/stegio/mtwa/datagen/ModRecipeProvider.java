@@ -5,12 +5,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.RecipeSerializer;
-import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -29,6 +27,39 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Blocks.TUFF, 4)
+                .pattern("CD")
+                .pattern("DC")
+                .input('C', Blocks.COBBLESTONE)
+                .input('D', Blocks.COBBLED_DEEPSLATE)
+                .criterion(hasItem(Blocks.COBBLESTONE), conditionsFromItem(Blocks.COBBLESTONE))
+                .criterion(hasItem(Blocks.COBBLED_DEEPSLATE), conditionsFromItem(Blocks.COBBLED_DEEPSLATE))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.QUARTZ, 4)
+                .input(Blocks.QUARTZ_BLOCK)
+                .criterion(hasItem(Blocks.QUARTZ_BLOCK), conditionsFromItem(Blocks.QUARTZ_BLOCK))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.HEAVY_CORE)
+                .input(Items.MACE)
+                .criterion(hasItem(Items.MACE), conditionsFromItem(Items.MACE))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AETHERITE_CORE1)
+                .input(ModItems.AETHERITE_MACE)
+                .criterion(hasItem(ModItems.AETHERITE_MACE), conditionsFromItem(ModItems.AETHERITE_MACE))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TITANITE_CORE)
+                .input(ModItems.TITANITE_MACE)
+                .criterion(hasItem(ModItems.TITANITE_MACE), conditionsFromItem(ModItems.TITANITE_MACE))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_CORE)
+                .input(ModItems.ETERNITE_MACE)
+                .criterion(hasItem(ModItems.ETERNITE_MACE), conditionsFromItem(ModItems.ETERNITE_MACE))
+                .offerTo(recipeExporter);
 
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.AETHERITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.AETHERITE_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.TITANITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.TITANITE_BLOCK);
@@ -1653,7 +1684,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         RecipeCategory.MISC,
                         ModItems.AETHERITE_CORE1
                 ).criterion("has_heavy_core", conditionsFromItem(Items.HEAVY_CORE))
-                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "aetherite_core1"));
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "aetherite_core11"));
 
         SmithingTransformRecipeJsonBuilder.create(
                         Ingredient.ofItems(ModItems.TITANITE_UPGRADE_SMITHING_TEMPLATE5),
@@ -1662,7 +1693,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         RecipeCategory.MISC,
                         ModItems.TITANITE_CORE
                 ).criterion("has_aetherite_core1", conditionsFromItem(ModItems.AETHERITE_CORE1))
-                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_core"));
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "titanite_core1"));
 
         SmithingTransformRecipeJsonBuilder.create(
                         Ingredient.ofItems(ModItems.ETERNITE_UPGRADE_SMITHING_TEMPLATE5),
@@ -1671,7 +1702,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         RecipeCategory.MISC,
                         ModItems.ETERNITE_CORE
                 ).criterion("has_titanite_core", conditionsFromItem(ModItems.TITANITE_CORE))
-                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_core"));
+                .offerTo(recipeExporter, Identifier.of(MTWA.MOD_ID, "eternite_core1"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AETHERITE_MACE)
                 .pattern("*")

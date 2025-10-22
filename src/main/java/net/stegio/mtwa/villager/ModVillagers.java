@@ -8,12 +8,16 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.village.VillagerProfession;
 import net.minecraft.world.poi.PointOfInterestType;
 import net.stegio.mtwa.MTWA;
 import net.stegio.mtwa.block.ModBlocks;
+
+import javax.swing.text.html.HTML;
 
 public class ModVillagers {
 
@@ -30,6 +34,7 @@ public class ModVillagers {
     public static final RegistryKey<PointOfInterestType> LTOOLSMITH_POI_KEY = registerPoiKey("ltoolsmith_poi");
 
     public static final RegistryKey<PointOfInterestType> MERCHANT_POI_KEY = registerPoiKey("merchant_poi");
+    public static final RegistryKey<PointOfInterestType> FENCE_POI_KEY = registerPoiKey("fence_poi");
 
     public static final RegistryKey<PointOfInterestType> ENCHANTER_POI_KEY = registerPoiKey("enchanter_poi");
 
@@ -46,6 +51,7 @@ public class ModVillagers {
     public static final PointOfInterestType LTOOLSMITH_POI = registerPOI("ltoolsmith_poi", ModBlocks.ETERNITE_TOOL_ANVIL);
 
     public static final PointOfInterestType MERCHANT_POI = registerPOI("merchant_poi", Blocks.CRAFTING_TABLE);
+    public static final PointOfInterestType FENCE_POI = registerPOI("fence_poi", Blocks.BLACK_SHULKER_BOX);
 
     public static final PointOfInterestType ENCHANTER_POI = registerPOI("enchanter_poi", Blocks.ENCHANTING_TABLE);
 
@@ -62,6 +68,7 @@ public class ModVillagers {
     public static final VillagerProfession LEGENDARY_TOOLSMITH = registerProfession("legendary_toolsmith", LTOOLSMITH_POI_KEY);
 
     public static final VillagerProfession MERCHANT = registerProfession("merchant", MERCHANT_POI_KEY);
+    public static final VillagerProfession FENCE = registerProfession("fence", FENCE_POI_KEY);
 
     public static final VillagerProfession ENCHANTER = registerProfession("enchanter", ENCHANTER_POI_KEY);
 
@@ -74,7 +81,7 @@ public class ModVillagers {
 
     private static PointOfInterestType registerPOI(String name, Block block) {
         return PointOfInterestHelper.register(Identifier.of(MTWA.MOD_ID, name),
-                1, 10, block);
+                1, 1, block);
     }
 
     private static RegistryKey<PointOfInterestType> registerPoiKey(String name) {

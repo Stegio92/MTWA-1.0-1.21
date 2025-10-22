@@ -4,7 +4,8 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "ExampleMixin",
-    "VillagerTradesMixin"
+    "VillagerTradesMixin",
+    "FluidBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

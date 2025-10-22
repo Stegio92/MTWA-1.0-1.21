@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "mtwa:titanite_mace"
+      "item": "minecraft:quartz_block"
     }
   ],
   "result": {
-    "count": 1,
-    "id": "mtwa:titanite_core"
+    "count": 4,
+    "id": "minecraft:quartz"
   }
 }

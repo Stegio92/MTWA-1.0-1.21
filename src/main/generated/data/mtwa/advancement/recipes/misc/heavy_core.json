@@ -1,32 +1,32 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "mtwa:titanite_core"
-      },
-      "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_titanite_mace": {
+    "has_mace": {
       "conditions": {
         "items": [
           {
-            "items": "mtwa:titanite_mace"
+            "items": "minecraft:mace"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:heavy_core"
+      },
+      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_titanite_mace"
+      "has_mace"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mtwa:titanite_core"
+      "minecraft:heavy_core"
     ]
   }
 }

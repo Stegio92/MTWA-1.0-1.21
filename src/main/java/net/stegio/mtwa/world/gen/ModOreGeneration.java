@@ -8,13 +8,6 @@ import net.stegio.mtwa.world.ModPlacedFeatures;
 
 public class ModOreGeneration {
     public static void generateOres() {
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
-                ModPlacedFeatures.OVERWORLD_ANCIENT_AETHERITE_DEBRIS_PLACED_KEY1);
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
-                ModPlacedFeatures.OVERWORLD_ANCIENT_TITANITE_DEBRIS_PLACED_KEY1);
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
-                ModPlacedFeatures.OVERWORLD_ANCIENT_ETERNITE_DEBRIS_PLACED_KEY1);
-
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ANCIENT_AETHERITE_DEBRIS_PLACED_KEY1);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
@@ -35,12 +28,5 @@ public class ModOreGeneration {
                 ModPlacedFeatures.ANCIENT_TITANITE_DEBRIS_PLACED_KEY3);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.ANCIENT_ETERNITE_DEBRIS_PLACED_KEY3);
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
-                ModPlacedFeatures.ANCIENT_AETHERITE_DEBRIS_PLACED_KEY4);
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
-                ModPlacedFeatures.ANCIENT_TITANITE_DEBRIS_PLACED_KEY4);
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
-                ModPlacedFeatures.ANCIENT_ETERNITE_DEBRIS_PLACED_KEY4);
     }
 }

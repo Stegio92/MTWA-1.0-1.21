@@ -16,9 +16,13 @@ public class LegendaryWeaponsmithTrades {
         switch (level) {
             case 1 -> {
                 trades.add(new TradeOffer(new TradedItem(ModItems.ETERNITE_INGOT, 1),
-                        new ItemStack(ModItems.GOLDEN_RYO_BUNDLE, 21), 8, 1, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 42),
+                        new ItemStack(ModItems.GOLDEN_RYO_BUNDLE, 32), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 35),
                         new ItemStack(ModItems.ETERNITE_INGOT, 1), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.ETERNITE_SCRAP),
+                        new ItemStack(ModItems.GOLDEN_RYO_BUNDLE), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.ESSENCE_OF_THE_UNIVERSE),
+                        new ItemStack(ModItems.GOLDEN_RYO_BUNDLE), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 60), Optional.of(new TradedItem(ModItems.TITANITE_KATANA5)),
                         new ItemStack(ModItems.ETERNITE_KATANA1, 1), 1, 8, 0));
             }

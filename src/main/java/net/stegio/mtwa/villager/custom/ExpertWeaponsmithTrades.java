@@ -16,10 +16,12 @@ public class ExpertWeaponsmithTrades {
         switch (level) {
             case 1 -> {
                 trades.add(new TradeOffer(new TradedItem(ModItems.AETHERITE_INGOT, 1),
-                        new ItemStack(ModItems.GOLDEN_RYO_BUNDLE, 1), 8, 1, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 2),
+                        new ItemStack(ModItems.GOLDEN_RYO_BUNDLE, 2), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 3),
                         new ItemStack(ModItems.AETHERITE_INGOT, 1), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(ModItems.AETHERITE_SCRAP),
+                        new ItemStack(ModItems.GOLDEN_RYO), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.ESSENCE_OF_THE_SKY),
                         new ItemStack(ModItems.GOLDEN_RYO), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO_BUNDLE, 8), Optional.of(new TradedItem(ModItems.NETHERITE_KATANA)),
                         new ItemStack(ModItems.AETHERITE_KATANA1, 1), 1, 8, 0));

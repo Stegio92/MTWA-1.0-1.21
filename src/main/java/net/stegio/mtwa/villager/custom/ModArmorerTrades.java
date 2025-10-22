@@ -23,8 +23,8 @@ public class ModArmorerTrades {
                 trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE), new ItemStack(Items.GOLD_INGOT, 8), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(Items.DIAMOND, 8), new ItemStack(ModItems.SILVER_RYO_BUNDLE), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(ModItems.SILVER_RYO_BUNDLE), new ItemStack(Items.DIAMOND, 6), 8, 1, 0));
-                trades.add(new TradeOffer(new TradedItem(Items.NETHERITE_INGOT, 2), new ItemStack(ModItems.GOLDEN_RYO), 8, 1, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO), new ItemStack(Items.NETHERITE_INGOT), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(Items.NETHERITE_INGOT), new ItemStack(ModItems.GOLDEN_RYO, 4), 8, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.GOLDEN_RYO, 6), new ItemStack(Items.NETHERITE_INGOT), 8, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(Items.EMERALD, 8), new ItemStack(ModItems.SILVER_RYO_BUNDLE), 8, 1, 0));
             }
             case 2 -> {
@@ -72,16 +72,16 @@ public class ModArmorerTrades {
             case 5 -> {
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 2), Optional.of(new TradedItem(Items.DIAMOND_HELMET)),
-                        new  ItemStack(Items.DIAMOND_HELMET), 2, 100, 0));
+                        new  ItemStack(Items.NETHERITE_HELMET), 2, 100, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 4), Optional.of(new TradedItem(Items.DIAMOND_CHESTPLATE)),
-                        new  ItemStack(Items.DIAMOND_CHESTPLATE), 2, 100, 0));
+                        new  ItemStack(Items.NETHERITE_CHESTPLATE), 2, 100, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 3), Optional.of(new TradedItem(Items.DIAMOND_LEGGINGS)),
-                        new  ItemStack(Items.DIAMOND_LEGGINGS), 2, 100, 0));
+                        new  ItemStack(Items.NETHERITE_LEGGINGS), 2, 100, 0));
                 trades.add(new TradeOffer(
                         new TradedItem(ModItems.SILVER_RYO_BUNDLE, 1), Optional.of(new TradedItem(Items.DIAMOND_BOOTS)),
-                        new  ItemStack(Items.DIAMOND_BOOTS), 2, 100, 0));
+                        new  ItemStack(Items.NETHERITE_BOOTS), 2, 100, 0));
             }
         }
         return trades;

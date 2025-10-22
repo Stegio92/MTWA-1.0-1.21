@@ -1,16 +1,13 @@
 {
-  "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "mtwa:aetherite_ingot"
-  },
-  "base": {
-    "item": "minecraft:heavy_core"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mtwa:aetherite_mace"
+    }
+  ],
   "result": {
     "count": 1,
     "id": "mtwa:aetherite_core1"
-  },
-  "template": {
-    "item": "mtwa:aetherite_upgrade_smithing_template5"
   }
 }

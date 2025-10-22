@@ -44,6 +44,10 @@
     {
       "id": "mtwa:enchanter_poi",
       "required": false
+    },
+    {
+      "id": "mtwa:fence_poi",
+      "required": false
     }
   ]
 }

@@ -1,16 +1,13 @@
 {
-  "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "mtwa:eternite_ingot"
-  },
-  "base": {
-    "item": "mtwa:titanite_core"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mtwa:eternite_mace"
+    }
+  ],
   "result": {
     "count": 1,
     "id": "mtwa:eternite_core"
-  },
-  "template": {
-    "item": "mtwa:eternite_upgrade_smithing_template5"
   }
 }

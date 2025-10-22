@@ -14,33 +14,35 @@ public class ModMasonTrades {
         switch (level) {
             case 1 -> {
                 trades.add(new TradeOffer(new TradedItem(Items.COBBLESTONE, 64), new ItemStack(ModItems.BRONZE_RYO, 4), 16, 1, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 4), new ItemStack(Items.COBBLESTONE, 32), 16, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 6), new ItemStack(Items.COBBLESTONE, 64), 16, 1, 0));
                 trades.add(new TradeOffer(new TradedItem(Items.STONE, 32), new ItemStack(ModItems.BRONZE_RYO, 4), 16, 1, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 4), new ItemStack(Items.STONE, 16), 16, 1, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 6), new ItemStack(Items.STONE, 32), 16, 1, 0));
             }
             case 2 -> {
+                trades.add(new TradeOffer(new TradedItem(Items.TUFF, 64), new ItemStack(ModItems.BRONZE_RYO, 5), 16, 2, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 7), new ItemStack(Items.TUFF, 64), 16, 2, 0));
                 trades.add(new TradeOffer(new TradedItem(Items.COBBLED_DEEPSLATE, 64), new ItemStack(ModItems.BRONZE_RYO, 6), 16, 2, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 6), new ItemStack(Items.COBBLESTONE, 32), 16, 2, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 8), new ItemStack(Items.COBBLED_DEEPSLATE, 64), 16, 2, 0));
                 trades.add(new TradeOffer(new TradedItem(Items.DEEPSLATE, 32), new ItemStack(ModItems.BRONZE_RYO, 6), 16, 2, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 6), new ItemStack(Items.DEEPSLATE, 16), 16, 2, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 8), new ItemStack(Items.DEEPSLATE, 32), 16, 2, 0));
             }
             case 3 -> {
                 trades.add(new TradeOffer(new TradedItem(Items.DIORITE, 64), new ItemStack(ModItems.BRONZE_RYO, 6), 16, 3, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 6), new ItemStack(Items.DIORITE, 32), 16, 3, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO, 8), new ItemStack(Items.DIORITE, 64), 16, 3, 0));
             }
             case 4 -> {
                 trades.add(new TradeOffer(new TradedItem(Items.WHITE_CONCRETE_POWDER, 64), new ItemStack(ModItems.BRONZE_RYO_BUNDLE), 16, 4, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE), new ItemStack(Items.WHITE_CONCRETE_POWDER, 32), 16, 4, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE, 2), new ItemStack(Items.WHITE_CONCRETE_POWDER, 64), 16, 4, 0));
             }
             case 5 -> {
                 trades.add(new TradeOffer(new TradedItem(Items.AMETHYST_SHARD, 16), new ItemStack(ModItems.BRONZE_RYO_BUNDLE, 2), 16, 10, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE, 2), new ItemStack(Items.AMETHYST_SHARD, 8), 16, 10, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE, 3), new ItemStack(Items.AMETHYST_SHARD, 16), 16, 10, 0));
                 trades.add(new TradeOffer(new TradedItem(Items.QUARTZ, 16), new ItemStack(ModItems.BRONZE_RYO_BUNDLE, 2), 16, 10, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE, 2), new ItemStack(Items.QUARTZ, 8), 16, 10, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE, 3), new ItemStack(Items.QUARTZ, 16), 16, 10, 0));
                 trades.add(new TradeOffer(new TradedItem(Items.LAPIS_LAZULI, 16), new ItemStack(ModItems.BRONZE_RYO_BUNDLE, 2), 16, 10, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE, 2), new ItemStack(Items.LAPIS_LAZULI, 8), 16, 10, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE, 3), new ItemStack(Items.LAPIS_LAZULI, 16), 16, 10, 0));
                 trades.add(new TradeOffer(new TradedItem(Items.REDSTONE, 16), new ItemStack(ModItems.BRONZE_RYO_BUNDLE, 2), 16, 10, 0));
-                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE, 2), new ItemStack(Items.REDSTONE, 8), 16, 10, 0));
+                trades.add(new TradeOffer(new TradedItem(ModItems.BRONZE_RYO_BUNDLE, 3), new ItemStack(Items.REDSTONE, 16), 16, 10, 0));
             }
         }
         return trades;

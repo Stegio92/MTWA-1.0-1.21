@@ -3,15 +3,15 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mtwa:titanite_core"
+        "recipe": "mtwa:eternite_core1"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_titanite_mace": {
+    "has_titanite_core": {
       "conditions": {
         "items": [
           {
-            "items": "mtwa:titanite_mace"
+            "items": "mtwa:titanite_core"
           }
         ]
       },
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_titanite_mace"
+      "has_titanite_core"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mtwa:titanite_core"
+      "mtwa:eternite_core1"
     ]
   }
 }

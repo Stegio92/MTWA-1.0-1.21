@@ -12,24 +12,6 @@
           "block": "minecraft:end_stone",
           "predicate_type": "minecraft:block_match"
         }
-      },
-      {
-        "state": {
-          "Name": "mtwa:ancient_titanite_debris1"
-        },
-        "target": {
-          "block": "minecraft:end_stone",
-          "predicate_type": "minecraft:block_match"
-        }
-      },
-      {
-        "state": {
-          "Name": "mtwa:ancient_eternite_debris1"
-        },
-        "target": {
-          "block": "minecraft:end_stone",
-          "predicate_type": "minecraft:block_match"
-        }
       }
     ]
   }

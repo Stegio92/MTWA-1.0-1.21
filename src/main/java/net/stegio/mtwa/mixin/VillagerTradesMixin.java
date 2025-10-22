@@ -30,6 +30,7 @@ public class VillagerTradesMixin {
                 profession == ModVillagers.MASTER_TOOLSMITH ||
                 profession == ModVillagers.LEGENDARY_TOOLSMITH ||
                 profession == ModVillagers.MERCHANT ||
+                profession == ModVillagers.FENCE ||
                 profession == VillagerProfession.FLETCHER ||
                 profession == VillagerProfession.SHEPHERD ||
                 profession == VillagerProfession.FARMER ||
@@ -75,6 +76,9 @@ public class VillagerTradesMixin {
             else if (profession == ModVillagers.MERCHANT) {
                 customTrades = MerchantTrades.getTradesForMerchant(level);
             }
+            else if (profession == ModVillagers.FENCE) {
+                customTrades = FenceTrades.getFenceTrades(level);
+            }
             else if (profession == VillagerProfession.FLETCHER) {
                 customTrades = ModFletcherTrades.getFletcherTrades(level);
             }
@@ -111,6 +115,7 @@ public class VillagerTradesMixin {
             else if (profession == VillagerProfession.TOOLSMITH) {
                 customTrades = ModToolsmithTrades.getToolsmithTrades(level);
             }
+
             for (TradeOffer offer : customTrades) {
                 villager.getOffers().add(offer);
             }
