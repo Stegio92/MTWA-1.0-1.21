@@ -11,21 +11,21 @@ import net.stegio.mtwa.util.ModTags;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    AETHERITE(ModTags.Blocks.INCORRECT_FOR_AETHERITE_TOOL, 2500, 15.0F, 5.0F, 5, () -> Ingredient.ofItems(ModItems.AETHERITE_INGOT)),
-    AETHERITE2(ModTags.Blocks.INCORRECT_FOR_AETHERITE_TOOL, 2600, 16.0F, 6.0F, 5, () -> Ingredient.ofItems(ModItems.AETHERITE_INGOT)),
-    AETHERITE3(ModTags.Blocks.INCORRECT_FOR_AETHERITE_TOOL, 2700, 17.0F, 7.0F, 5, () -> Ingredient.ofItems(ModItems.AETHERITE_INGOT)),
-    AETHERITE4(ModTags.Blocks.INCORRECT_FOR_AETHERITE_TOOL, 2800, 18.0F, 8.0F, 5, () -> Ingredient.ofItems(ModItems.AETHERITE_INGOT)),
-    AETHERITE5(ModTags.Blocks.INCORRECT_FOR_AETHERITE_TOOL, 2900, 20.0F, 9.0F, 5, () -> Ingredient.ofItems(ModItems.AETHERITE_INGOT)),
-    TITANITE(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL, 3000, 25.0F, 10.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
-    TITANITE2(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL, 3100, 26.0F, 11.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
-    TITANITE3(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL, 3200, 27.0F, 12.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
-    TITANITE4(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL, 3300, 28.0F, 13.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
-    TITANITE5(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL, 3400, 30.0F, 14.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
-    ETERNITE1(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL, 3500, 31.0F, 15.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
-    ETERNITE2(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL, 3600, 32.0F, 16.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
-    ETERNITE3(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL, 3700, 33.0F, 17.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
-    ETERNITE4(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL, 3800, 34.0F, 18.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
-    ETERNITE5(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL, 4000, 35.0F, 20.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT));
+    AETHERITE(ModTags.Blocks.INCORRECT_FOR_AETHERITE_TOOL1, 2500, 15.0F, 5.0F, 5, () -> Ingredient.ofItems(ModItems.AETHERITE_INGOT)),
+    AETHERITE2(ModTags.Blocks.INCORRECT_FOR_AETHERITE_TOOL2, 2600, 16.0F, 6.0F, 5, () -> Ingredient.ofItems(ModItems.AETHERITE_INGOT)),
+    AETHERITE3(ModTags.Blocks.INCORRECT_FOR_AETHERITE_TOOL3, 2700, 17.0F, 7.0F, 5, () -> Ingredient.ofItems(ModItems.AETHERITE_INGOT)),
+    AETHERITE4(ModTags.Blocks.INCORRECT_FOR_AETHERITE_TOOL4, 2800, 18.0F, 8.0F, 5, () -> Ingredient.ofItems(ModItems.AETHERITE_INGOT)),
+    AETHERITE5(ModTags.Blocks.INCORRECT_FOR_AETHERITE_TOOL5, 2900, 20.0F, 9.0F, 5, () -> Ingredient.ofItems(ModItems.AETHERITE_INGOT)),
+    TITANITE(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL1, 3000, 25.0F, 10.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
+    TITANITE2(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL2, 3100, 26.0F, 11.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
+    TITANITE3(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL3, 3200, 27.0F, 12.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
+    TITANITE4(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL4, 3300, 28.0F, 13.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
+    TITANITE5(ModTags.Blocks.INCORRECT_FOR_TITANITE_TOOL5, 3400, 30.0F, 14.0F, 5, () -> Ingredient.ofItems(ModItems.TITANITE_INGOT)),
+    ETERNITE1(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL1, 3500, 31.0F, 15.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
+    ETERNITE2(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL2, 3600, 32.0F, 16.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
+    ETERNITE3(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL3, 3700, 33.0F, 17.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
+    ETERNITE4(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL4, 3800, 34.0F, 18.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT)),
+    ETERNITE5(ModTags.Blocks.INCORRECT_FOR_ETERNITE_TOOL5, 4000, 35.0F, 20.0F, 5, () -> Ingredient.ofItems(ModItems.ETERNITE_INGOT));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

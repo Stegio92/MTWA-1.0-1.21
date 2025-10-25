@@ -30,6 +30,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAnvil(ModBlocks.AETHERITE_TOOL_ANVIL);
         blockStateModelGenerator.registerAnvil(ModBlocks.TITANITE_TOOL_ANVIL);
         blockStateModelGenerator.registerAnvil(ModBlocks.ETERNITE_TOOL_ANVIL);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TUFF_EXPERIENCE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STONE_EXPERIENCE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_EXPERIENCE_ORE);
     }
 
     @Override

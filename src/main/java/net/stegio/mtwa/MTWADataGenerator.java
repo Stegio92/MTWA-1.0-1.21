@@ -7,6 +7,8 @@ import net.minecraft.registry.RegistryKeys;
 import net.stegio.mtwa.datagen.*;
 import net.stegio.mtwa.world.ModConfiguredFeatures;
 import net.stegio.mtwa.world.ModPlacedFeatures;
+import net.stegio.mtwa.world.biome.ModBiomes;
+import net.stegio.mtwa.world.dimension.ModDimensions;
 
 public class MTWADataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -22,7 +24,10 @@ public class MTWADataGenerator implements DataGeneratorEntrypoint {
     }
     @Override
     public void buildRegistry(RegistryBuilder registryBuilder) {
+        registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootsrap);
+        registryBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, ModDimensions::bootstrapType);
         registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
         registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+
     }
 }

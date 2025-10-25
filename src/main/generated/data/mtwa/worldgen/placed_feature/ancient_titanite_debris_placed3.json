@@ -2,12 +2,12 @@
   "feature": "mtwa:ancient_titanite_debris3",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 5
+      "type": "minecraft:count",
+      "count": 3
     },
     {
-      "type": "minecraft:count",
-      "count": 1
+      "type": "minecraft:rarity_filter",
+      "chance": 1
     },
     {
       "type": "minecraft:in_square"
@@ -17,10 +17,10 @@
       "height": {
         "type": "minecraft:trapezoid",
         "max_inclusive": {
-          "absolute": 35
+          "absolute": 25
         },
         "min_inclusive": {
-          "absolute": 10
+          "absolute": 5
         }
       }
     },

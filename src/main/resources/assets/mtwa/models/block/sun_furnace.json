@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "mtwa:block/sun_furnace_front",
-    "side": "mtwa:block/sun_furnace_side",
-    "top": "mtwa:block/sun_furnace_top",
-    "bottom": "mtwa:block/sun_furnace_bottom"
-  }
-}

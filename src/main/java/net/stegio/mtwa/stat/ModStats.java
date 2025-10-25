@@ -11,8 +11,6 @@ import static net.minecraft.stat.Stats.CUSTOM;
 
 public class ModStats {
 
-    public static final Identifier INTERACT_WITH_SUN_FURNACE = register("interact_with_sun_furnace", StatFormatter.DEFAULT);
-
     private static Identifier register(String id, StatFormatter formatter) {
         Identifier identifier = Identifier.ofVanilla(id);
         Registry.register(Registries.CUSTOM_STAT, id, identifier);

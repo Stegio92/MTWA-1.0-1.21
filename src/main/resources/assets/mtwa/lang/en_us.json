@@ -177,6 +177,9 @@
   "block.mtwa.titanite_block": "Titanite Block",
   "block.mtwa.ancient_eternite_debris1": "Ancient Eternite Debris",
   "block.mtwa.eternite_block": "Eternite Block",
+  "block.mtwa.tuff_experience_ore": "Tuff Experience Ore",
+  "block.mtwa.stone_experience_ore": "Stone Experience Ore",
+  "block.mtwa.deepslate_experience_ore": "Deepslate Experience Ore",
 
   "itemgroup.mtwa.mtwa": "MTWA",
 
@@ -229,12 +232,6 @@
   "block.mtwa.eternite_armor_anvil": "Eternite Armor Anvil",
   "block.mtwa.eternite_weapon_anvil": "Eternite Weapon Anvil",
   "block.mtwa.eternite_tool_anvil": "Eternite Tool Anvil",
-
-  "block.mtwa.sun_furnace": "Sun furnace",
-
-  "item.mtwa.wooden_spear": "Wooden Spear",
-  "entity.mtwa.wooden_spear": "Wooden Spear",
-
 
   "entity.minecraft.villager.expert_armorer": "Expert Armorer",
   "entity.minecraft.villager.expert_weaponsmith": "Expert Weaponsmith",

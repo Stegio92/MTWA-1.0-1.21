@@ -2,12 +2,12 @@
   "feature": "mtwa:ancient_eternite_debris2",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 5
+      "type": "minecraft:count",
+      "count": 5
     },
     {
-      "type": "minecraft:count",
-      "count": 1
+      "type": "minecraft:rarity_filter",
+      "chance": 1
     },
     {
       "type": "minecraft:in_square"
@@ -17,10 +17,10 @@
       "height": {
         "type": "minecraft:trapezoid",
         "max_inclusive": {
-          "absolute": 40
+          "absolute": 30
         },
         "min_inclusive": {
-          "absolute": 10
+          "absolute": 0
         }
       }
     },

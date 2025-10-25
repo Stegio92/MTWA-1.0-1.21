@@ -1,0 +1,11 @@
+{
+  "type": "mtwa:eternite_dim_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "mtwa:eternite_dimension",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "mtwa:mining_cave"
+    }
+  }
+}

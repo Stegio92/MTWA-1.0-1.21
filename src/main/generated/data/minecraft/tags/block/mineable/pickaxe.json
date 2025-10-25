@@ -18,6 +18,9 @@
     "mtwa:aetherite_tool_anvil",
     "mtwa:titanite_tool_anvil",
     "mtwa:eternite_tool_anvil",
-    "mtwa:tombstone"
+    "mtwa:tombstone",
+    "mtwa:tuff_experience_ore",
+    "mtwa:stone_experience_ore",
+    "mtwa:deepslate_experience_ore"
   ]
 }

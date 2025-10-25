@@ -9,9 +9,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.stegio.mtwa.MTWA;
-import net.stegio.mtwa.block.custom.ModFurnaceBlock;
-import net.stegio.mtwa.block.custom.SunFurnaceBlock;
 import net.stegio.mtwa.block.custom.Tombstone;
 
 import static net.minecraft.block.Blocks.createLightLevelFromLitBlockState;
@@ -86,16 +85,6 @@ public class ModBlocks {
     public static final Block TOMBSTONE = registerBlock("tombstone",
             new Tombstone(AbstractBlock.Settings.create().strength(10.0f, 100f)
                     .requiresTool().sounds(BlockSoundGroup.STONE).nonOpaque()));
-
-    public static final Block SUN_FURNACE = registerBlock(
-            "sun_furnace",
-            new SunFurnaceBlock(
-                    AbstractBlock.Settings.create()
-                            .mapColor(MapColor.STONE_GRAY)
-                            .instrument(NoteBlockInstrument.BASEDRUM)
-                            .requiresTool()
-                            .strength(3.5F)
-                            .luminance(createLightLevelFromLitBlockState(13))));
 
     public static final Block AETHERITE_ARMOR_ANVIL = registerBlock(
             "aetherite_armor_anvil",
@@ -186,6 +175,39 @@ public class ModBlocks {
                             .strength(5.0F, 1200.0F)
                             .sounds(BlockSoundGroup.ANVIL)
                             .pistonBehavior(PistonBehavior.BLOCK)));
+
+    public static final Block TUFF_EXPERIENCE_ORE = registerBlock(
+            "tuff_experience_ore",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(3, 6),
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.GRAY)
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .requiresTool()
+                            .strength(2.5F, 7.0F)
+                            .sounds(BlockSoundGroup.TUFF)));
+
+    public static final Block STONE_EXPERIENCE_ORE = registerBlock(
+            "stone_experience_ore",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(4, 7),
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.GRAY)
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .requiresTool()
+                            .strength(3.0F, 7.5F)
+                            .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DEEPSLATE_EXPERIENCE_ORE = registerBlock(
+            "deepslate_experience_ore",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(5, 8),
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.GRAY)
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .requiresTool()
+                            .strength(3.5F, 8.0F)
+                            .sounds(BlockSoundGroup.DEEPSLATE)));
 
 
 

@@ -580,13 +580,6 @@ public class ModItems {
             "eternite_horse_armor", new AnimalArmorItem(
                     ModArmorMaterials.ETERNITE_ARMOR_MATERIAL1, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1).rarity(Rarity.EPIC)));
 
-    public static final Item WOODEN_SPEAR = registerItem(
-            "wooden_spear",
-            new WoodenSpearItem(
-                    new Item.Settings()
-                            .maxDamage(200)
-                            .attributeModifiers(WoodenSpearItem.createAttributeModifiers())
-                            .component(DataComponentTypes.TOOL, WoodenSpearItem.createToolComponent())));
 
 
     private static Item registerItem(String name, Item item){
