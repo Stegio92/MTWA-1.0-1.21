@@ -18,14 +18,15 @@ import net.stegio.mtwa.MTWA;
 public class ModBiomes {
     public static final RegistryKey<Biome> MINING_CAVE = RegistryKey.of(RegistryKeys.BIOME,
             Identifier.of(MTWA.MOD_ID, "mining_cave"));
+    public static final RegistryKey<Biome> DOMAIN = RegistryKey.of(RegistryKeys.BIOME,
+            Identifier.of(MTWA.MOD_ID, "domain"));
 
     public static void bootsrap(Registerable<Biome> context) {
         context.register(MINING_CAVE, mining_cave(context));
+        context.register(DOMAIN, domain(context));
     }
 
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
-        DefaultBiomeFeatures.addAmethystGeodes(builder);
-        DefaultBiomeFeatures.addSprings(builder);
     }
 
     public static Biome mining_cave(Registerable<Biome> context) {
@@ -55,5 +56,32 @@ public class ModBiomes {
                         .build())
                 .build();
     }
+    public static Biome domain(Registerable<Biome> context) {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
+
+        globalOverworldGeneration(biomeBuilder);
+
+        return new Biome.Builder()
+                .precipitation(false)
+                .downfall(0.0f)
+                .temperature(0.8f)
+                .generationSettings(biomeBuilder.build())
+                .spawnSettings(spawnBuilder.build())
+                .effects((new BiomeEffects.Builder())
+                        .waterColor(0x520614)
+                        .waterFogColor(0x4f7388)
+                        .skyColor(0x000000)
+                        .grassColor(0x000000)
+                        .foliageColor(0x000000)
+                        .fogColor(0x000000)
+                        .moodSound(BiomeMoodSound.CAVE)
+                        .build())
+                .build();
+    }
 }
+
 

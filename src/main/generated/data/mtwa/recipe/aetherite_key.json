@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "*": {
+      "item": "mtwa:essence_of_the_sky"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "N*N",
+    "NNN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:aetherite_key"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "sea_level": 5,
+  "disable_mob_generation": true,
+  "aquifers_enabled": false,
+  "noise_caves_enabled": false,
+  "deepslate_enabled": false,
+  "ore_veins_enabled": false,
+  "legacy_random_source": false,
+  "default_block": {
+    "Name": "minecraft:blackstone"
+  },
+  "default_fluid": {
+    "Name": "minecraft:water",
+    "Properties": {
+      "level": "0"
+    }
+  },
+  "spawn_target": [],
+  "noise": {
+    "height": 128,
+    "min_y": 0,
+    "size_horizontal": 1,
+    "size_vertical": 1,
+    "density_factor": 0,
+    "density_offset": 0,
+    "simplex_surface_noise": false,
+    "random_density_offset": false,
+    "island_noise_override": false,
+    "amplified": false,
+    "weirdness": {
+      "first_octave": -7,
+      "amplitudes": [1.0, 1.0, 1.0]
+    },
+    "slide": {
+      "target": "none",
+      "size": 0,
+      "offset": 0
+    }
+  },
+  "noise_router": {
+    "barrier": 0.0,
+    "fluid_level_floodedness": 0.0,
+    "fluid_level_spread": 0.0,
+    "lava": -1.0,
+    "temperature": 0.0,
+    "vegetation": 0.0,
+    "continents": 0.0,
+    "erosion": 0.0,
+    "depth": 0.0,
+    "ridges": 0.0,
+    "initial_density_without_jaggedness": 0.0,
+    "final_density": {
+      "type": "minecraft:y_clamped_gradient",
+      "from_y": 4,
+      "to_y": 5,
+      "from_value": 1.0,
+      "to_value": -1.0
+    },
+    "vein_toggle": 0.0,
+    "vein_ridged": 0.0,
+    "vein_gap": 0.0
+  },
+  "surface_rule": {
+    "type": "minecraft:sequence",
+    "sequence": [
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:vertical_gradient",
+          "false_at_and_above": {
+            "above_bottom": 1
+          },
+          "random_name": "minecraft:bedrock_floor",
+          "true_at_and_below": {
+            "above_bottom": 0
+          }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "minecraft:bedrock"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:stone_depth",
+          "add_surface_depth": false,
+          "offset": 0,
+          "secondary_depth_range": 0,
+          "surface_type": "floor"
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:noise_threshold",
+                "max_threshold": -0.75,
+                "min_threshold": -1.00,
+                "noise": "minecraft:nether_state_selector"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:water"
+                }
+              }
+            },
+            {
+              "type": "minecraft:block",
+              "result_state": {
+                "Name": "minecraft:water"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:vertical_gradient",
+          "false_at_and_above": {
+            "above_bottom": 5
+          },
+          "random_name": "minecraft:floor",
+          "true_at_and_below": {
+            "above_bottom": 4
+          }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "minecraft:blackstone"
+          }
+        }
+      }
+    ]
+  }
+}
+

@@ -62,14 +62,14 @@ public class ModConfiguredFeatures {
                         OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.ANCIENT_TITANITE_DEBRIS1.getDefaultState()));
         List<OreFeatureConfig.Target> stone_experience =
                 List.of(
-                        OreFeatureConfig.createTarget(tuffReplaceables, ModBlocks.STONE_EXPERIENCE_ORE.getDefaultState()));
+                        OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.STONE_EXPERIENCE_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> eternite =
                 List.of(
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.ANCIENT_ETERNITE_DEBRIS1.getDefaultState()));
         List<OreFeatureConfig.Target> deepslate_experience =
                 List.of(
-                        OreFeatureConfig.createTarget(tuffReplaceables, ModBlocks.DEEPSLATE_EXPERIENCE_ORE.getDefaultState()));
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_EXPERIENCE_ORE.getDefaultState()));
 
         register(context, ANCIENT_AETHERITE_DEBRIS_KEY1, Feature.ORE, new OreFeatureConfig(aetherite, 1, 1.0f));
         register(context, ANCIENT_AETHERITE_DEBRIS_KEY2, Feature.ORE, new OreFeatureConfig(aetherite, 2, 1.0f));

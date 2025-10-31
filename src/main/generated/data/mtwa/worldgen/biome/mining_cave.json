@@ -15,22 +15,7 @@
     "water_color": 4499128,
     "water_fog_color": 8763585
   },
-  "features": [
-    [],
-    [],
-    [
-      "minecraft:amethyst_geode"
-    ],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ]
-  ],
+  "features": [],
   "has_precipitation": false,
   "spawn_costs": {},
   "spawners": {

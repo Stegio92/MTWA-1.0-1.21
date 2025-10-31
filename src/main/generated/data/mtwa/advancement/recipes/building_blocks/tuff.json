@@ -1,21 +1,41 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cobbled_deepslate": {
+    "has_essence_of_the_sky": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:cobbled_deepslate"
+            "items": "mtwa:essence_of_the_sky"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_cobblestone": {
+    "has_essence_of_the_sun": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:cobblestone"
+            "items": "mtwa:essence_of_the_sun"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_essence_of_the_universe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mtwa:essence_of_the_universe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_netherite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_ingot"
           }
         ]
       },
@@ -31,8 +51,10 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cobblestone",
-      "has_cobbled_deepslate"
+      "has_netherite_ingot",
+      "has_essence_of_the_sky",
+      "has_essence_of_the_universe",
+      "has_essence_of_the_sun"
     ]
   ],
   "rewards": {

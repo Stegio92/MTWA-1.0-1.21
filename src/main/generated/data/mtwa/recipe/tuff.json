@@ -2,16 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "C": {
-      "item": "minecraft:cobblestone"
+    "*": {
+      "item": "mtwa:essence_of_the_sky"
     },
-    "D": {
-      "item": "minecraft:cobbled_deepslate"
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "S": {
+      "item": "mtwa:essence_of_the_sun"
+    },
+    "U": {
+      "item": "mtwa:essence_of_the_universe"
     }
   },
   "pattern": [
-    "CD",
-    "DC"
+    "*NS",
+    "NUN",
+    "SN*"
   ],
   "result": {
     "count": 4,

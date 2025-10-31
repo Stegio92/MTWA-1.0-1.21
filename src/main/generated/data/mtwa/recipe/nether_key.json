@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DOD",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:nether_key"
+  }
+}

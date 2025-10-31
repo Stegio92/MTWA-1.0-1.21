@@ -64,19 +64,19 @@ public class ModPlacedFeatures {
 
 
         register(context, TUFF_EXPERIENCE_ORE_PLACED_KEY4, configuredFeatures.getOrThrow(ModConfiguredFeatures.TUFF_EXPERIENCE_ORE_KEY4),
-                ModOrePlacement.modifiersWithCount(25,1,
+                ModOrePlacement.modifiersWithCount(10,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, TUFF_EXPERIENCE_ORE_PLACED_KEY5, configuredFeatures.getOrThrow(ModConfiguredFeatures.TUFF_EXPERIENCE_ORE_KEY5),
-                ModOrePlacement.modifiersWithCount(24,1,
+                ModOrePlacement.modifiersWithCount(11,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, TUFF_EXPERIENCE_ORE_PLACED_KEY6, configuredFeatures.getOrThrow(ModConfiguredFeatures.TUFF_EXPERIENCE_ORE_KEY6),
-                ModOrePlacement.modifiersWithCount(23,1,
+                ModOrePlacement.modifiersWithCount(12,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, TUFF_EXPERIENCE_ORE_PLACED_KEY7, configuredFeatures.getOrThrow(ModConfiguredFeatures.TUFF_EXPERIENCE_ORE_KEY7),
-                ModOrePlacement.modifiersWithCount(22,1,
+                ModOrePlacement.modifiersWithCount(13,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, TUFF_EXPERIENCE_ORE_PLACED_KEY8, configuredFeatures.getOrThrow(ModConfiguredFeatures.TUFF_EXPERIENCE_ORE_KEY8),
-                ModOrePlacement.modifiersWithCount(21,1,
+                ModOrePlacement.modifiersWithCount(14,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
 
 
@@ -94,19 +94,19 @@ public class ModPlacedFeatures {
 
 
         register(context, STONE_EXPERIENCE_ORE_PLACED_KEY4, configuredFeatures.getOrThrow(ModConfiguredFeatures.STONE_EXPERIENCE_ORE_KEY4),
-                ModOrePlacement.modifiersWithCount(27,1,
+                ModOrePlacement.modifiersWithCount(12,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, STONE_EXPERIENCE_ORE_PLACED_KEY5, configuredFeatures.getOrThrow(ModConfiguredFeatures.STONE_EXPERIENCE_ORE_KEY5),
-                ModOrePlacement.modifiersWithCount(26,1,
+                ModOrePlacement.modifiersWithCount(13,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, STONE_EXPERIENCE_ORE_PLACED_KEY6, configuredFeatures.getOrThrow(ModConfiguredFeatures.STONE_EXPERIENCE_ORE_KEY6),
-                ModOrePlacement.modifiersWithCount(25,1,
+                ModOrePlacement.modifiersWithCount(14,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, STONE_EXPERIENCE_ORE_PLACED_KEY7, configuredFeatures.getOrThrow(ModConfiguredFeatures.STONE_EXPERIENCE_ORE_KEY7),
-                ModOrePlacement.modifiersWithCount(24,1,
+                ModOrePlacement.modifiersWithCount(15,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, STONE_EXPERIENCE_ORE_PLACED_KEY8, configuredFeatures.getOrThrow(ModConfiguredFeatures.STONE_EXPERIENCE_ORE_KEY8),
-                ModOrePlacement.modifiersWithCount(23,1,
+                ModOrePlacement.modifiersWithCount(16,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
 
 
@@ -124,19 +124,19 @@ public class ModPlacedFeatures {
 
 
         register(context, DEEPSLATE_EXPERIENCE_ORE_PLACED_KEY4, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_EXPERIENCE_ORE_KEY4),
-                ModOrePlacement.modifiersWithCount(30,1,
+                ModOrePlacement.modifiersWithCount(13,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, DEEPSLATE_EXPERIENCE_ORE_PLACED_KEY5, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_EXPERIENCE_ORE_KEY5),
-                ModOrePlacement.modifiersWithCount(29,1,
+                ModOrePlacement.modifiersWithCount(14,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, DEEPSLATE_EXPERIENCE_ORE_PLACED_KEY6, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_EXPERIENCE_ORE_KEY6),
-                ModOrePlacement.modifiersWithCount(28,1,
+                ModOrePlacement.modifiersWithCount(15,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, DEEPSLATE_EXPERIENCE_ORE_PLACED_KEY7, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_EXPERIENCE_ORE_KEY7),
-                ModOrePlacement.modifiersWithCount(27,1,
+                ModOrePlacement.modifiersWithCount(16,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
         register(context, DEEPSLATE_EXPERIENCE_ORE_PLACED_KEY8, configuredFeatures.getOrThrow(ModConfiguredFeatures.DEEPSLATE_EXPERIENCE_ORE_KEY8),
-                ModOrePlacement.modifiersWithCount(25,1,
+                ModOrePlacement.modifiersWithCount(17,1,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
     }
 

@@ -22,4 +22,5 @@ public record ModDimensionOptions(RegistryEntry<DimensionType> dimensionTypeEntr
     public static final RegistryKey<DimensionOptions> AETHERITE_DIM = RegistryKey.of(RegistryKeys.DIMENSION, Identifier.of(MTWA.MOD_ID, "aetherite_dim"));
     public static final RegistryKey<DimensionOptions> TITANITE_DIM = RegistryKey.of(RegistryKeys.DIMENSION, Identifier.of(MTWA.MOD_ID,"titanite_dim"));
     public static final RegistryKey<DimensionOptions> ETERNITE_DIM = RegistryKey.of(RegistryKeys.DIMENSION, Identifier.of(MTWA.MOD_ID,"eternite_dim"));
+    public static final RegistryKey<DimensionOptions> DOMAIN_DIM = RegistryKey.of(RegistryKeys.DIMENSION, Identifier.of(MTWA.MOD_ID,"domain_dim"));
 }

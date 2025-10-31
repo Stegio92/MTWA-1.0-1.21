@@ -1,4 +1,4 @@
-// 1.21	2025-10-25T22:52:02.1606054	MTWA/Recipes
+// 1.21	2025-10-31T18:39:13.968022	MTWA/Recipes
 fded07bd701b4874bed34ece5bdfa5736987993b data\mtwa\recipe\eternite_leggings5.json
 cb61ee70fecd49a5206f4f12d5782e48b16361a0 data\mtwa\advancement\recipes\misc\aetherite_upgrade_smithing_template5_1.json
 0c77d6eedad380d423f62d6eadf0a2fa4af956d8 data\mtwa\recipe\eternite_axe1.json
@@ -20,6 +20,7 @@ b9f181677cf84e624813f500876db21c3a084cc4 data\mtwa\advancement\recipes\misc\aeth
 a13f677342c7665f25b6c0e3e049c67c918f750d data\mtwa\recipe\eternite_helmet1.json
 6434f8f3efced392279481dd402c8de488fd6a99 data\mtwa\recipe\titanite_leggings5.json
 ed9be49a80f36c03f9a34d6ac5b6587d3b3fc764 data\mtwa\recipe\titanite_axe3.json
+476e7384df6ff53a86e9de125bd4c06539f14ed8 data\mtwa\recipe\eternite_key.json
 bb4d48a2046a8b1a153999ed263303c8449edf7e data\mtwa\advancement\recipes\misc\titanite_leggings5.json
 92dc5ccfbd083d3e5481740c2f32697b7e49b4cd data\mtwa\advancement\recipes\misc\aetherite_scrap_from_smelting_ancient_aetherite_debris1.json
 b7a5cbf6fffc4cd1757be1fe0220cdc62368836a data\mtwa\recipe\eternite_hoe3.json
@@ -37,6 +38,7 @@ fd6c4c37e2feec14ced5fd9f180abfc0a5aef95c data\mtwa\advancement\recipes\misc\tita
 9154a7d421322fb03ea715ac23a114ac1bc24fc9 data\mtwa\advancement\recipes\misc\eternite_katana2.json
 cd257e9e4789c6c36e3b2a17014a6b402304f373 data\mtwa\advancement\recipes\misc\eternite_leggings5.json
 0627dd411b52f5a25def24472e2ed003cb1f6723 data\mtwa\advancement\recipes\misc\aetherite_scrap_from_blasting_ancient_aetherite_debris1.json
+4dda000b2f0bc5fd4fbd501e75913ecd3e926460 data\mtwa\recipe\nether_key.json
 0fd4b3477201eae2e87b4c199c6947ea6d06960e data\mtwa\recipe\aetherite_shovel4.json
 6c87aef337a153d6deaf0642a08c13930f23557f data\mtwa\recipe\aetherite_boots2.json
 8d725c20f193626a651c0afa0abd8a4ebb4f2052 data\mtwa\advancement\recipes\misc\aetherite_leggings3.json
@@ -54,6 +56,7 @@ a7b9f3d8aed07d3b7802abcaef87c56b5be4f219 data\mtwa\recipe\titanite_hoe5.json
 b0d97fae2c88074d1071d497491e75a9477f5beb data\mtwa\recipe\titanite_boots1.json
 7de5027e953c6c24ad1a94a8abb361c1411b0e84 data\mtwa\advancement\recipes\misc\eternite_axe2.json
 f42ed92b0a9904a03040cedb15d05f9ac8724c21 data\mtwa\recipe\titanite_upgrade_smithing_template4_1.json
+8dc95b8f36b8b2c9a9ad366411f59e62e6289438 data\mtwa\advancement\recipes\misc\domain_key.json
 5cb49d1341f19099ca8929cd895121cac703acd7 data\mtwa\advancement\recipes\misc\eternite_shovel3.json
 1fe01b801ceebc559ab0b8ef9c5bde0ae821e2a2 data\mtwa\recipe\aetherite_hoe4.json
 0b00ea11d5b2c435c0b9db1a382e32de53ea718a data\mtwa\recipe\aetherite_leggings3.json
@@ -153,6 +156,7 @@ f13ca79bbce80f75f9b06978dff14ff7def81b3b data\mtwa\recipe\aetherite_upgrade_smit
 8129b061b1e6bfd12b31b2e89e52868253355624 data\mtwa\advancement\recipes\misc\eternite_axe5.json
 3a36df2ffd352b5905528738a15ea3f966688fb2 data\mtwa\recipe\eternite_scrap_from_smelting_ancient_eternite_debris1.json
 67feb95acaacfd2116fac933071b647b4e920e04 data\mtwa\advancement\recipes\misc\eternite_hoe5.json
+c5d98e0544d5fe85dadc585554fa992661e6a583 data\mtwa\advancement\recipes\misc\aetherite_key.json
 616393ffec27e47e6964b92c21fffbbee64d7db6 data\mtwa\advancement\recipes\misc\aetherite_shovel3.json
 cb6c5ef07fde5d2f0072e7729a7e095f0000032f data\mtwa\advancement\recipes\misc\aetherite_katana2.json
 2246f0b89c5f6f8b3254276a6e2134d78f2b7518 data\mtwa\advancement\recipes\misc\titanite_scrap_from_smelting_ancient_titanite_debris1.json
@@ -190,6 +194,7 @@ b5813fb6f219f5b44b80464f654167daf777788c data\mtwa\advancement\recipes\misc\eter
 818c03a5b8c6e1e02a6b84c41cb76ddb4cbbd9bf data\mtwa\advancement\recipes\misc\eternite_boots1.json
 c98964c2a654bb97ed0da4818e069f655d6d0de2 data\mtwa\recipe\eternite_upgrade_smithing_template4_1.json
 4d0e03b3fbf9740f65957f6b4b189d04906fdc69 data\mtwa\advancement\recipes\misc\titanite_pickaxe.json
+a14b238b4d82678670e674ca10220a52ba76a885 data\mtwa\recipe\titanite_key.json
 a7e42b1841632337c96226259e45a2c7f1f7a40f data\mtwa\recipe\aetherite_horse_armor.json
 858a861cad66a2abff1a6a6701abbc6af8706fad data\mtwa\recipe\eternite_boots1.json
 581d2ead3b272752289c5e182112f37f6f418c57 data\mtwa\advancement\recipes\decorations\titanite_block.json
@@ -237,7 +242,9 @@ ddf94949ccfde7ba45466ba81d1e8d33546ddb5e data\mtwa\advancement\recipes\misc\aeth
 e58c65951144b6f51027d6e09de494f973aea158 data\mtwa\recipe\aetherite_upgrade_smithing_template3_2.json
 38470ffc73644cf0be524230c62c825d3daa496f data\mtwa\advancement\recipes\misc\aetherite_upgrade_smithing_template4_2.json
 4db11211f25d4a6a3930179b82d3555b2490890b data\mtwa\recipe\aetherite_chestplate2.json
+395e17c4a4fbbe4dc77c1df30b3537c0d8010e76 data\mtwa\advancement\recipes\misc\nether_key.json
 2b263334e7a4cf5d1b2db79739c776311e3848a9 data\mtwa\recipe\tombstone.json
+844103084f6e8cd7a3afdae15fbb78457012c5eb data\mtwa\recipe\aetherite_key.json
 ea898d93dc61fe21dd3cf9c54be43d8838ec6ae1 data\mtwa\advancement\recipes\misc\titanite_tool_anvil.json
 c126ac0ee3c81e5fc78c949c3c8a765820c07328 data\mtwa\recipe\eternite_hoe1.json
 44cf6d5a1adc8997d14d1f5c27068512633cc560 data\mtwa\recipe\aetherite_pickaxe5.json
@@ -245,6 +252,7 @@ df967403de1d426947c2d14a1572f89090a1842b data\mtwa\recipe\eternite_pickaxe1.json
 e88b6c84b8c87ab546b24579910652da7f2c5ee0 data\mtwa\recipe\aetherite_armor_anvil.json
 abceac286c1f9066353c49bcce28abce64dd1b60 data\mtwa\advancement\recipes\misc\titanite_leggings3.json
 572fd59ef154caa11eda39d0be4e1ff8bedbc4cf data\mtwa\advancement\recipes\misc\titanite_shovel3.json
+5d72fc9bb9dc63db5b24708feb578eeee0d12f93 data\mtwa\recipe\domain_key.json
 f1cd4e80ac918a299bf592c8a363d50ab4cf6046 data\mtwa\recipe\titanite_shovel5.json
 e82bb99e5cf86843b4fc9fb85879455e5cd27fb8 data\mtwa\recipe\silver_ryo.json
 7b181f44feab3778260bbe311a8d133c1714eae6 data\mtwa\recipe\eternite_leggings3.json
@@ -337,6 +345,7 @@ b37b84826865726653eaee1537006f02abae3bcb data\mtwa\recipe\aetherite_axe3.json
 f94556f4264c5d099e8d65c007dadc71853913dc data\mtwa\recipe\titanite_scrap_from_smelting_ancient_titanite_debris1.json
 bb791cb2949f9789cfe298b369dbfcf3a00c0d0b data\mtwa\recipe\titanite_armor_anvil.json
 728eb2b51f6d47ef50dc9602da85ec6f53d64941 data\mtwa\advancement\recipes\misc\eternite_katana5.json
+186c98bbc7c31dd82da4d70f7a0c154726853356 data\mtwa\advancement\recipes\misc\eternite_key.json
 2166ccbe4f034d16819f6408ae50b5dbd5a9f637 data\mtwa\advancement\recipes\misc\aetherite_tool_anvil.json
 f470e08fbb262ec852798a3c94b02fbb873e8384 data\mtwa\advancement\recipes\misc\titanite_helmet2.json
 0f28d6a41833e2ea92803b2cf18c1f2e933f3f3a data\mtwa\advancement\recipes\misc\aetherite_upgrade_smithing_template2_1.json
@@ -429,6 +438,7 @@ f00c6732f4afdd98eddbaca1767e6e67e70ce086 data\mtwa\advancement\recipes\misc\tomb
 4418f70ff9711b337620a520e6d3935a23277deb data\mtwa\advancement\recipes\misc\aetherite_chestplate4.json
 bfe058214edb500359a40253ef315c602baecf61 data\mtwa\advancement\recipes\misc\eternite_helmet5.json
 6b2389d6fece8aca27f03b163b0bee5475f4de99 data\mtwa\advancement\recipes\misc\eternite_katana3.json
+141551f66b1ee932f6effed10d953e46f460ad09 data\mtwa\advancement\recipes\misc\titanite_key.json
 c1b536a02863b2e7f7a69e642c3ce91831ba1ef4 data\mtwa\advancement\recipes\misc\eternite_pickaxe1.json
 4ef7f79792936e0e63915e36d36a4821d8ad9da3 data\mtwa\recipe\aetherite_shovel2.json
 0c6204f70468f18f7def1b2de2698db0659770c0 data\mtwa\advancement\recipes\misc\eternite_boots2.json

@@ -1,4 +1,4 @@
-// 1.21	2025-10-25T22:52:02.1659026	MTWA/Tags for minecraft:block
+// 1.21	2025-10-31T18:39:13.9741769	MTWA/Tags for minecraft:block
 96f82185d439760355187309b234aa59f3c535b8 data\mtwa\tags\block\incorrect_for_titanite_tool4.json
 0dc40e24d2888ab749ef3319803a2c362d9fc80e data\mtwa\tags\block\incorrect_for_aetherite_tool2.json
 603116ac9979f5b1cd61547cf6d7abfb006bb2b8 data\mtwa\tags\block\needs_aetherite_tool1.json
@@ -7,16 +7,16 @@ c04d56a59ed874e1d9843195bf5bdd041d8070ae data\minecraft\tags\block\incorrect_for
 96f82185d439760355187309b234aa59f3c535b8 data\mtwa\tags\block\incorrect_for_titanite_tool2.json
 c9fc28e172969296378ea902d148a672bca901be data\mtwa\tags\block\incorrect_for_titanite_tool5.json
 3180d8a34a68b9f65cbc24416cbb7a38a2313050 data\mtwa\tags\block\needs_titanite_tool1.json
-c04d56a59ed874e1d9843195bf5bdd041d8070ae data\minecraft\tags\block\incorrect_for_netherite_tool.json
 0dc40e24d2888ab749ef3319803a2c362d9fc80e data\mtwa\tags\block\incorrect_for_aetherite_tool1.json
+c04d56a59ed874e1d9843195bf5bdd041d8070ae data\minecraft\tags\block\incorrect_for_netherite_tool.json
 841545b99bfb206ea8da344c25e82a7564020454 data\mtwa\tags\block\needs_eternite_tool1.json
 30a3be8d6cf385456073d9607c05f87d8e8c6943 data\minecraft\tags\block\mineable\pickaxe.json
 96f82185d439760355187309b234aa59f3c535b8 data\mtwa\tags\block\incorrect_for_titanite_tool3.json
 02be821d39fa8c0b49de55904631ffb48b74dfb6 data\mtwa\tags\block\needs_aetherite_tool5.json
 0dc40e24d2888ab749ef3319803a2c362d9fc80e data\mtwa\tags\block\incorrect_for_aetherite_tool3.json
 7b6016bc20df56d5d27cd3bb801640cf027cefa5 data\minecraft\tags\block\needs_diamond_tool.json
-c04d56a59ed874e1d9843195bf5bdd041d8070ae data\minecraft\tags\block\incorrect_for_gold_tool.json
 c04d56a59ed874e1d9843195bf5bdd041d8070ae data\minecraft\tags\block\incorrect_for_stone_tool.json
+c04d56a59ed874e1d9843195bf5bdd041d8070ae data\minecraft\tags\block\incorrect_for_gold_tool.json
 c04d56a59ed874e1d9843195bf5bdd041d8070ae data\minecraft\tags\block\incorrect_for_wooden_tool.json
 18928ec4e69fae5acb886665804d66149002790e data\mtwa\tags\block\needs_titanite_tool5.json
 96f82185d439760355187309b234aa59f3c535b8 data\mtwa\tags\block\incorrect_for_titanite_tool1.json

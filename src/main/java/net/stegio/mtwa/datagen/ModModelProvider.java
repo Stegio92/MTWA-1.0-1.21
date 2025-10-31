@@ -44,6 +44,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SILVER_RYO_BUNDLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOLDEN_RYO, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOLDEN_RYO_BUNDLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DOMAIN_KEY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHER_KEY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AETHERITE_KEY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TITANITE_KEY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETERNITE_KEY, Models.GENERATED);
 
 
         itemModelGenerator.register(ModItems.AETHERITE_SCRAP, Models.GENERATED);

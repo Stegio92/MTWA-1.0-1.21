@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "P": {
+      "item": "minecraft:player_head"
+    }
+  },
+  "pattern": [
+    "EDE",
+    "DPD",
+    "EDE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:domain_key"
+  }
+}

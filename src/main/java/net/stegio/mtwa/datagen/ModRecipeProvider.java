@@ -27,6 +27,58 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DOMAIN_KEY)
+                .pattern("EDE")
+                .pattern("DPD")
+                .pattern("EDE")
+                .input('D', Items.DIAMOND)
+                .input('P', Items.PLAYER_HEAD)
+                .input('E', Items.EMERALD)
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .criterion(hasItem(Items.PLAYER_HEAD), conditionsFromItem(Items.PLAYER_HEAD))
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.NETHER_KEY)
+                .pattern("DDD")
+                .pattern("DOD")
+                .pattern("DDD")
+                .input('D', Items.DIAMOND)
+                .input('O', Items.OBSIDIAN)
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .criterion(hasItem(Items.OBSIDIAN), conditionsFromItem(Items.OBSIDIAN))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AETHERITE_KEY)
+                .pattern("NNN")
+                .pattern("N*N")
+                .pattern("NNN")
+                .input('N', Items.NETHERITE_INGOT)
+                .input('*', ModItems.ESSENCE_OF_THE_SKY)
+                .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
+                .criterion(hasItem(ModItems.ESSENCE_OF_THE_SKY), conditionsFromItem(ModItems.ESSENCE_OF_THE_SKY))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.TITANITE_KEY)
+                .pattern("AAA")
+                .pattern("A*A")
+                .pattern("AAA")
+                .input('A', ModItems.AETHERITE_INGOT)
+                .input('*', ModItems.ESSENCE_OF_THE_SUN)
+                .criterion(hasItem(ModItems.AETHERITE_INGOT), conditionsFromItem(ModItems.AETHERITE_INGOT))
+                .criterion(hasItem(ModItems.ESSENCE_OF_THE_SUN), conditionsFromItem(ModItems.ESSENCE_OF_THE_SUN))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETERNITE_KEY)
+                .pattern("TTT")
+                .pattern("T*T")
+                .pattern("TTT")
+                .input('T', ModItems.TITANITE_INGOT)
+                .input('*', ModItems.ESSENCE_OF_THE_UNIVERSE)
+                .criterion(hasItem(ModItems.TITANITE_INGOT), conditionsFromItem(ModItems.TITANITE_INGOT))
+                .criterion(hasItem(ModItems.ESSENCE_OF_THE_UNIVERSE), conditionsFromItem(ModItems.ESSENCE_OF_THE_UNIVERSE))
+                .offerTo(recipeExporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Blocks.TUFF, 4)
                 .pattern("CD")
                 .pattern("DC")

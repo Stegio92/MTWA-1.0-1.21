@@ -31,6 +31,13 @@ public class ModItems {
     public static final Item ESSENCE_OF_THE_SUN = registerItem("essence_of_the_sun", new RarityItem(new Item.Settings(), ModRarity.MYTHIC));
     public static final Item ESSENCE_OF_THE_UNIVERSE = registerItem("essence_of_the_universe", new RarityItem(new Item.Settings(), ModRarity.DIVINE));
 
+    public static final Item DOMAIN_KEY = registerItem("domain_key", new Item(new Item.Settings()));
+    public static final Item NETHER_KEY = registerItem("nether_key", new Item(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final Item AETHERITE_KEY = registerItem("aetherite_key", new RarityItem(new Item.Settings(), ModRarity.LEGENDARY));
+    public static final Item TITANITE_KEY = registerItem("titanite_key", new RarityItem(new Item.Settings(), ModRarity.MYTHIC));
+    public static final Item ETERNITE_KEY = registerItem("eternite_key", new RarityItem(new Item.Settings(), ModRarity.DIVINE));
+
+
     public static final Item AETHERITE_INGOT = registerItem("aetherite_ingot", new RarityItem(new Item.Settings(), ModRarity.LEGENDARY));
     public static final Item TITANITE_INGOT = registerItem("titanite_ingot", new RarityItem(new Item.Settings(), ModRarity.MYTHIC));
     public static final Item ETERNITE_INGOT = registerItem("eternite_ingot", new RarityItem(new Item.Settings(), ModRarity.DIVINE));

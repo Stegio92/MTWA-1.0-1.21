@@ -32,6 +32,11 @@ public class ModItemGroups {
                         entries.add(ModItems.ESSENCE_OF_THE_SKY);
                         entries.add(ModItems.ESSENCE_OF_THE_SUN);
                         entries.add(ModItems.ESSENCE_OF_THE_UNIVERSE);
+                        entries.add(ModItems.DOMAIN_KEY);
+                        entries.add(ModItems.NETHER_KEY);
+                        entries.add(ModItems.AETHERITE_KEY);
+                        entries.add(ModItems.TITANITE_KEY);
+                        entries.add(ModItems.ETERNITE_KEY);
 
                         entries.add(ModItems.AETHERITE_INGOT);
                         entries.add(ModItems.TITANITE_INGOT);

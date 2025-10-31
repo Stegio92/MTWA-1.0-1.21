@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "*": {
+      "item": "mtwa:essence_of_the_sun"
+    },
+    "A": {
+      "item": "mtwa:aetherite_ingot"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "A*A",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mtwa:titanite_key"
+  }
+}
